@@ -1,0 +1,17 @@
+
+* Three parts to the course
+
+1. Manipulating Financial Data in Python [1-9]
+2. Computational Investing [1-10]
+3. Learning Algorithms for Trading [1-7]
+
+* Textbooks
+
+- 1. Python for Finance, Yves Hilpisch
+  - https://github.com/yhilpisch/py4fi
+- 2. What Hedge Funds Really Do
+- 3. Machine Learning, Tom Mitchell
+  - https://github.com/pgebhard/intellidrive/blob/master/research/Machine%20Learning%20-%20Tom%20Mitchell.pdf
+  - http://www.cs.cmu.edu/~tom/mlbook-chapter-slides.html
+  - http://personal.disco.unimib.it/Vanneschi/McGrawHill_-_Machine_Learning_-Tom_Mitchell.pdf
+  

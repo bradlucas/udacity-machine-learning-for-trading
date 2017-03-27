@@ -1,0 +1,162 @@
+* PART 1
+* 01-01 - Reading and Plotting Stock Data
+
+Lesson outline
+In this lesson you will learn how to read data, select subsets of it and generate useful plots, using pandas and matplotlib.
+- http://pandas.pydata.org/
+- http://matplotlib.org/
+
+Read stock data from CSV files:
+
+- pandas.DataFrame
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
+
+- pandas.read_csv
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html
+
+Select desired rows and columns:
+- Indexing and Slicing Data
+- http://pandas.pydata.org/pandas-docs/stable/indexing.html
+
+- Gotchas: Label-based slicing conventions
+- http://pandas.pydata.org/pandas-docs/stable/gotchas.html?#label-based-slicing-conventions
+
+Visualize data by generating plots:
+- Plotting
+- http://pandas.pydata.org/pandas-docs/stable/visualization.html
+
+- pandas.DataFrame.plot
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html
+
+- matplotlib.pyplot.plot
+- http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot
+
+** Real stock data
+
+Date, Open, High, Low, Close, Volume, Adj Close
+
+Close == Actual Close
+Adj Close == Provided by the data provider, takes into account splits and dividend
+
+Date sort desc. Newest at top moves down to the past
+
+** Pandas dataframe
+
+Symbols along the top. 
+Date the first column with date moving down and up through time. Date ascending
+
+Rows contain the data values. NaN is not a number (Python's name for null)
+
+Three dimensional. Stcked cards where each has a different data value
+Close, Volume, AdjClose etc
+
+** Reading a CSV
+
+- ./env/lib/python2.7/site-packages/QSTK/QSData/Yahoo/AAPL.csv
+
+* 01-02 - Working with multiple stocks
+
+Lesson outline
+Here's an overview of what you'll learn to do in this lesson.
+
+Read in multiple stocks:
+
+Create an empty pandas.DataFrame with dates as index: pandas.date_range
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.date_range.html
+
+Drop missing date rows: pandas.DataFrame.dropna
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.dropna.html
+
+Incrementally join data for each stock: pandas.DataFrame.join
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.join.html
+
+Manipulate stock data:
+
+Index and select data by row (dates) and column (symbols)
+- http://pandas.pydata.org/pandas-docs/stable/indexing.html
+Plot multiple stocks at once (still using pandas.DataFrame.plot)
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html
+Carry out arithmetic operations across stocks
+
+
+** Problems to solve with dataframe
+
+- date ranges
+- multiple stocks
+- align dates
+- proper date order
+  
+** join
+- dates which are in both dataframes
+  
+
+- Types of join
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.join.html
+
+
+
+** Obtaining a slice of data
+
+
+** Slicing Data
+
+# Slice by row range (dates) using DataFrame.ix[] selector
+df2 = df1.ix[start_date:end_date]
+
+# Column slicing
+df[['IBM','GLD']]
+
+# Both
+df1.ix['2010-01-01': '2010-01-31', ['IBM','GLD']]
+
+
+** Plotting
+
+Hard to compare when the prices are so far apart
+Would be nice to start all at the same price.
+
+Normalize the start price to 1.0
+
+df2 = df1/df1.ix[0]
+or
+df2 = df1/df1.ix[0, :]
+
+
+Carly Fiorina was named "the most powerful woman in business" by Forbes in 1998, while at AT&T/Lucent. 
+She was the CEO of HP from 1999-2005, and has held several leadership positions at technology firms and business institutes.
+
+Listen to her talk about The Importance of Selective Information as part of Stanford's Entrepreneurial Thought Leaders Lecture series [full podcast].
+http://ecorner.stanford.edu/authorMaterialInfo.html?mid=1716
+http://ecorner.stanford.edu/authorMaterialInfo.html?mid=1679
+
+Some of her popular quotes can be found here.
+http://thinkexist.com/quotes/carly_fiorina/
+
+
+** Lesson summary
+To read multiple stocks into a single dataframe, you need to:
+
+Specify a set of dates using pandas.date_range
+    -  http://pandas.pydata.org/pandas-docs/stable/generated/pandas.date_range.html
+Create an empty dataframe with dates as index
+    This helps align stock data and orders it by trading date
+
+Read in a reference stock (here SPY) and drop non-trading days using pandas.DataFrame.dropna
+    - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
+
+Incrementally join dataframes using pandas.DataFrame.join
+    - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.join.html
+
+
+Once you have multiple stocks, you can:
+
+Select a subset of stocks by ticker symbols
+Slice by row (dates) and column (symbols)
+Plot multiple stocks at once (still using pandas.DataFrame.plot)
+    - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html
+Carry out arithmetic operations across stocks, e.g. normalize by the first day's price
+
+
+
+
