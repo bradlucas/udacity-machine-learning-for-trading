@@ -244,7 +244,7 @@ Resources from NumPy User Guide and Reference:
     - http://docs.scipy.org/doc/numpy/reference/index.html
 
 The N-dimensional array
-    - http://docs.scipy.org/doc/numpy/reference/arrays.ndarray.html
+    - http://docs.scipy.org/doc/numpy/reference/arrays.ndarray.html 
 Data types
     - http://docs.scipy.org/doc/numpy/user/basics.types.html
 Array creation [more]
@@ -261,3 +261,95 @@ Mathematical functions
     - http://docs.scipy.org/doc/numpy/reference/routines.math.html
 Linear algebra
     - http://docs.scipy.org/doc/numpy/reference/routines.linalg.html
+* 01-04 - Statistical Analysis
+
+Pandas makes it very convenient to compute various statistics on a dataframe:
+
+Global statistics: mean, median, std, sum, etc. [more]
+    - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.mean.html
+    - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.median.html
+    - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.std.html
+    - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sum.html
+    - http://pandas.pydata.org/pandas-docs/stable/api.html#api-dataframe-stats
+Rolling statistics: rolling_mean, rolling_std, etc. [more]
+    - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.rolling_mean.html
+    - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.rolling_std.html
+    - http://pandas.pydata.org/pandas-docs/stable/computation.html?highlight=rolling%20statistics#moving-rolling-statistics-moments
+
+
+You will use these functions to analyze stock movement over time.
+
+Specifically, you will compute:
+
+Bollinger Bands: A way of quantifying how far stock price has deviated from some norm.
+Daily returns: Day-to-day change in stock price.
+
+** Global Statistics 
+
+33 global statistics
+- mean
+- median
+- std
+- sum
+- prod
+- mode
+- ...
+
+stat = df1.mean()
+
+** Rolling Mean
+
+20 day window
+mean
+Move over one day
+Repeat
+
+Lagging
+
+A simple moving average
+Look at where the price crosses the moving average
+
+** Quiz
+How to tell when to look at a deviation is worth looking at
+
+Rolling standard deviation
+
+** Bollinger Bands
+
+Look at the recent violtility of the stock
+
+2 standard deviations above and below the rolling mean
+
+2 sigma away from the mean are things to notice
+
+When the price crosses the band and returns back is potentially a trading signal
+
+** Computing Rolling Statistics
+
+pandas.stats.moments.rolling_mean
+
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.rolling_mean.html
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.rolling_std.html
+- http://pandas.pydata.org/pandas-docs/stable/computation.html?highlight=rolling%20statistics#moving-rolling-statistics-moments
+
+
+** Daily Returns
+
+How much did a price go up or down on a given day
+
+daily_ret[t] = (price[t]/price[t-1]) - 1
+
+
+Daily return vs Time
+Zig zags
+Take the mean and observe
+
+Compare stocks daily return vs SPY or others
+
+
+** Cumulative returns
+
+
+cum_ret[t] = (price[t]/price[0]) - 1
+
+
