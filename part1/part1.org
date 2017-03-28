@@ -157,6 +157,107 @@ Plot multiple stocks at once (still using pandas.DataFrame.plot)
     - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html
 Carry out arithmetic operations across stocks, e.g. normalize by the first day's price
 
+* 01-03 - NumPy
+Matrices which are  NDArrys
 
 
+Lesson outline
+If you're familiar with NumPy (esp. the following operations), feel free to skim through this lesson.
 
+Create a NumPy array:
+    from a pandas dataframe: pandas.DataFrame.values
+        - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.values.html
+    from a Python sequence: numpy.array
+        - http://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html
+    with constant initial values: numpy.ones, numpy.zeros
+        - http://docs.scipy.org/doc/numpy/reference/generated/numpy.ones.html
+        - http://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html
+    with random values: numpy.random
+        - http://docs.scipy.org/doc/numpy/reference/routines.random.html
+Access array attributes: shape, ndim, size, dtype
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.shape.html
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.ndim.html
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.size.html
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.dtype.html
+Compute statistics: sum, min, max, mean
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.sum.html
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.min.html
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.max.html
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.mean.html
+Carry out arithmetic operations: add, subtract, multiply, divide
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.add.html
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.subtract.html
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.multiply.html
+    - http://docs.scipy.org/doc/numpy/reference/generated/numpy.divide.html
+Measure execution time: time.time, profile
+    - https://docs.python.org/2/library/time.html#time.time
+    - https://docs.python.org/2/library/profile.html
+Manipulate array elements: Using simple indices and slices, integer arrays, boolean arrays
+    - http://docs.scipy.org/doc/numpy/reference/arrays.indexing.html#basic-slicing-and-indexing
+    - http://docs.scipy.org/doc/numpy/reference/arrays.indexing.html#integer-array-indexing
+    - http://docs.scipy.org/doc/numpy/reference/arrays.indexing.html#boolean-array-indexing
+
+
+** Relationship to Pandas
+- Wrapper for numerical libraries
+- Pandas is a wrapper for NumPy
+
+- The inside part is a ndarray
+- nd1 = df1.values
+
+** Nodes on notation
+
+- nd1[row, col]      # 0-based
+
+- nd1[0, ]
+
+- colon syntax is for ranges
+- nd1[0-3, 1:3]     # rows 0, 1, 2 and columns 1, 2, the last value is one past the included set
+
+- nd1[:, 3]         # all rows, column 3
+
+- nd1[-1,1:3]           # Last row columns 1 and 2
+
+** Quiz
+
+- nd1[0:2, 0:2] = nd2[-2, 2:4]
+
+** Indexing
+
+- https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html
+
+** Arithmetic Operations
+
+NumPy Reference: Arithmetic operations
+
+- numpy.add: Element-wise addition, same as + operator
+- numpy.subtract: Element-wise subtraction, same as -
+- numpy.multiply: Element-wise multiplication, same as *
+- numpy.divide: Element-wise division, same as /
+- numpy.dot: Dot product (1D arrays), matrix multiplication (2D)
+
+
+** Learning more NumPy
+
+Resources from NumPy User Guide and Reference:
+    - http://docs.scipy.org/doc/numpy/user/index.html
+    - http://docs.scipy.org/doc/numpy/reference/index.html
+
+The N-dimensional array
+    - http://docs.scipy.org/doc/numpy/reference/arrays.ndarray.html
+Data types
+    - http://docs.scipy.org/doc/numpy/user/basics.types.html
+Array creation [more]
+    - http://docs.scipy.org/doc/numpy/user/basics.creation.html
+    - http://docs.scipy.org/doc/numpy/reference/routines.array-creation.html
+Indexing [more]
+    - http://docs.scipy.org/doc/numpy/user/basics.indexing.html
+    - http://docs.scipy.org/doc/numpy/reference/arrays.indexing.html
+Broadcasting
+    - http://docs.scipy.org/doc/numpy/user/basics.broadcasting.html
+Random sampling
+    - http://docs.scipy.org/doc/numpy/reference/routines.random.html
+Mathematical functions
+    - http://docs.scipy.org/doc/numpy/reference/routines.math.html
+Linear algebra
+    - http://docs.scipy.org/doc/numpy/reference/routines.linalg.html
