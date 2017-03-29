@@ -1,4 +1,5 @@
 * PART 1
+- https://www.udacity.com/course/machine-learning-for-trading--ud501
 * 01-01 - Reading and Plotting Stock Data
 
 Lesson outline
@@ -332,7 +333,6 @@ pandas.stats.moments.rolling_mean
 - http://pandas.pydata.org/pandas-docs/stable/generated/pandas.rolling_std.html
 - http://pandas.pydata.org/pandas-docs/stable/computation.html?highlight=rolling%20statistics#moving-rolling-statistics-moments
 
-
 ** Daily Returns
 
 How much did a price go up or down on a given day
@@ -346,10 +346,30 @@ Take the mean and observe
 
 Compare stocks daily return vs SPY or others
 
-
 ** Cumulative returns
-
 
 cum_ret[t] = (price[t]/price[0]) - 1
 
+* 01-05 - Missing Data
 
+** Pristine Data
+
+
+** Data goes missing
+
+See symbol JAVA
+Was Mr Coffee
+Then Sun Microsystems
+No long
+
+** What can we do
+
+- fill forward to fill in gaps
+
+
+** Pandas fillna
+
+- http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.fillna.html
+
+
+- fillna(method='ffill')
