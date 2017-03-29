@@ -350,6 +350,13 @@ Compare stocks daily return vs SPY or others
 
 cum_ret[t] = (price[t]/price[0]) - 1
 
+
+** Bollinger Bands - Notes
+- https://www.linkedin.com/pulse/qb4-bollinger-bands-rolling-mean-standard-deviation-alan-mcdowell
+- http://stackoverflow.com/questions/40742364/pandas-rolling-standard-deviation
+- https://www.oanda.com/forex-trading/learn/technical-analysis-for-traders/bollinger-bands/standard-deviations
+- http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:bollinger_bands
+- 
 * 01-05 - Missing Data
 
 ** Pristine Data
@@ -373,3 +380,29 @@ No long
 
 
 - fillna(method='ffill')
+
+* 01-06 - Histograms and Scatterplots
+
+** A closer look at daily returns
+
+Daily return chart
+Price change % per day
+Daily Ret vs Time
+
+*** Histogram
+
+Occurrances into buckets
+
+Histogram of stockmarket over long period of time looks like a bell curve. Gaussian or normal distribution
+
+
+- Mean
+- Standard Deviation (variace from mean)
+- Kurtosis
+  - tails
+  - how much your chart differs from 'nomal gaussian' distribution
+  - fat tails (positive), more occurances in tails
+  - negative kurtosis, few occurances
+    
+
+
