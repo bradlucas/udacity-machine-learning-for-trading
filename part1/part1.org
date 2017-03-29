@@ -389,7 +389,7 @@ Daily return chart
 Price change % per day
 Daily Ret vs Time
 
-*** Histogram
+** Histogram
 
 Occurrances into buckets
 
@@ -405,4 +405,37 @@ Histogram of stockmarket over long period of time looks like a bell curve. Gauss
   - negative kurtosis, few occurances
     
 
+
+** Scatterplots
+
+Linear regression to fit a line to the scatter plot
+
+- Slope
+  - Beta
+  - How reactive is the stock to the mark
+
+  - Slope == 1
+    - The stock moves with the market
+
+  - Higher number
+    - The stock moves more than the market
+
+- Intercept vertica axis
+  - Alpha
+    - If positive returns more than the market
+
+** Slope is not correlation
+
+- Correlation is a meaure how tightly the points fit the line
+  - Thinner cloud is tighter
+
+  - 0 is not correlated at all
+  - 1 is highly correlated
+
+** Real world
+
+Daily returns for stocks and the market look like a Gaussian
+If they where really Guassian we'd say they were normally distributed
+  
+This is dangerous be it ignores kurtosis, or the probability in the tails
 
