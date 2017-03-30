@@ -439,3 +439,151 @@ If they where really Guassian we'd say they were normally distributed
   
 This is dangerous be it ignores kurtosis, or the probability in the tails
 
+* 01-07 - Sharpe ratio and other portfolio statistics
+
+Portfolio
+- Allocation of funds to a set of stocks
+
+** Daily portfolio values
+
+allocs = [04, 0.4, 0.1, 0.1]
+
+- Prices
+  - prices
+
+- Normalizd proces
+  - Normalize to the first day
+  - normalized = prices/prices[0]
+  - Prices will all start at 1.0
+  - normed = prices / prices[0]
+
+- Allocation
+  - Multiply each by it's allocation
+  - alloced = normed * allocs
+
+- Position values
+  - First row is how much you started with
+  - pos_vals = alloced * start_val
+
+- Portfolio value
+  - Sum across each day
+  - port_val = pos_vals.sum(axis=1)
+
+** Daily returns
+
+- First value is zero
+- Exclude that value from calculations on dataily _returns
+
+daily_rets = daily_rets[1:]
+
+- Four key statistics
+
+- Cumulative Return
+  - How much has the value of the portfolio gone up since the beginning
+- Average Daily Return
+  - Average (mean) of each daily return
+- Standard Deviation of Daily Return
+  - Standard deviation of each of the daily runs
+    - Risk or volitility
+- Sharpe Ratio
+  - Risk adjusted return
+
+** Sharpe Ratio
+
+- All else being equal
+- Lower risk is better
+- Higher return is better
+
+- Also, considered is
+- the risk free rate of return
+
+William Sharpe
+
+The value of a portfolio is directly proportional to the return it
+generates over some baseline (here risk-free rate), and inversely
+proportional to its volatility.
+
+
+
+** Calculating the Sharpe Ratio
+
+S = E[Rp - Rf] / std[Rp - Rf]
+
+Ex ante formulation
+Expected
+Forward looking
+
+S = mean(daily_rets - daily_rf) / std(daily_rets - daily_rf)
+
+
+daily_rf
+- LIBOR
+- 3 month T-bill
+- 0%
+
+
+Traditional shortcut
+10% per year
+0.1
+1.0 + 0.1
+
+What is the rate per day
+
+daily_rf = 252nd root of 1.0. + 0.1 - 1 = daily risk free root
+
+
+daily_rf does fluctate but in effect it is constant. With that the std
+of a number minus a constant is the same as the std of the number.
+
+
+S = mean(daily_rets - daily_rf) / std(daily_rets)
+
+** More on Sharpe ratio
+
+- Changes depending on sampling (annually, monthly, daily, etc)
+- Originally thought of for an annual number
+
+- SR annualized = K * SR
+- K = sqrt( samples per year)
+
+- daily K = sqrt(252)
+- meekly k = sqrt(52)
+- monthly k = sqrt(12)
+
+SR = sqrt(252) * mean(daily_rets * daily_rf) / std(daily_rets)
+
+
+** Quiz: What Is The Sharpe Ratio?
+
+60 days of data
+avg daily ret = 10 bps = 0.001 per day
+daily risk free = 2 bps = 0.0002
+std daily ret = 10 bps = 0.001
+
+bip = 1/10 of a 1 percent = 1/10 * .01 = .001
+
+
+Recall the formula for computing Sharpe ratio:
+
+k * mean(daily_rets_ - _daily_rf) / std(daily_rets)
+where k = sqrt(252) for daily sampling.
+
+
+= sqrt(252) * mean(0.001 - 0.0002) / std(.001)
+
+** Assigment
+
+Write a function to calculate the following for a portfolio:
+
+1. Cumulative Return
+2. Average daily return
+3. Risk
+4. Sharpe ratio
+
+
+
+
+
+
+
+
