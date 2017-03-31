@@ -577,13 +577,6 @@ Write a function to calculate the following for a portfolio:
 
 1. Cumulative Return
 2. Average daily return
-3. Risk
+3. Risk (Std deviation)
 4. Sharpe ratio
-
-
-
-
-
-
-
 
