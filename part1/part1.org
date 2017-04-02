@@ -624,3 +624,31 @@ be hard for our minimizer.
 Functions with multiple minima, any discontinuities or zero slope will
 be hard for our minimizer.
 
+** Building a parameerized model
+
+f(x) = mx + b
+
+f(x) = c0 * x + c1
+
+c0 = coefficient 0 is the slope
+c1 = coefficient 1 is the y intercept
+
+What are we trying to minimize?
+
+Observe how far each point is away from the line. Call these differences e0, e1, ...
+E stands for error
+
+Sum(abs(eN)) or Sum(e^^2)
+
+
+** Minimier finds coefficients
+
+Guess c0 = 1 and c1 = 0
+Figure the errors
+
+Re-try with new c values
+Figure the errors
+
+Repeat until lowest errors values
+
+
