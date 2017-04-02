@@ -580,3 +580,19 @@ Write a function to calculate the following for a portfolio:
 3. Risk (Std deviation)
 4. Sharpe ratio
 
+* 01-08 - Optimizers: Building a parameterized model
+** What is an optimizer?
+Algorith that can do:
+
+- Find minimum values for functions
+  - f(x) - x^2 + x^3 + 5
+  - For what value of x is this function minimized
+- Build parameterized models based on data
+- Refine allocations for stocks in a portfolios
+
+How to use an optimizer
+
+1. Provide a function to minimize
+   - Define in Python
+2. Provide an initial guess
+3. Call the optimizer
