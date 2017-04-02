@@ -596,3 +596,24 @@ How to use an optimizer
    - Define in Python
 2. Provide an initial guess
 3. Call the optimizer
+
+** How to defeat a minimizer
+
+- http://www.scipy-lectures.org/advanced/mathematical_optimization/
+
+
+Functions with multiple minima, any discontinuities or zero slope will
+be hard for our minimizer.
+
+** Convex Problems
+
+- The easiest type of function for an optimizer to solve for
+- Has only one local minima
+
+
+- https://en.wikipedia.org/wiki/Convex_function
+- https://en.wikipedia.org/wiki/Convex_function#/media/File:ConvexFunction.svg
+
+Functions with multiple minima, any discontinuities or zero slope will
+be hard for our minimizer.
+
