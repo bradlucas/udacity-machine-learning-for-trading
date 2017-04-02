@@ -597,6 +597,13 @@ How to use an optimizer
 2. Provide an initial guess
 3. Call the optimizer
 
+** Gradient Descent
+
+https://en.wikipedia.org/wiki/Gradient_descent
+
+import scipy.optimize as spo
+min_result = spo.minimize(f, Xguess, method='SLSQP', options={'disp': True})
+
 ** How to defeat a minimizer
 
 - http://www.scipy-lectures.org/advanced/mathematical_optimization/
