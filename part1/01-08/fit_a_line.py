@@ -54,18 +54,18 @@ def test_run():
     # Generate noisy data point
     noise_sigma = 3.0
     noise = np.random.normal(0, noise_sigma, Yorig.shape)            # add noise to original data
-    data = np.asarray([Xorig, Yorig + noise]).T              
+    data = np.asarray([Xorig, Yorig + noise])
     plt.plot(data[:, 0], data[:, 1], 'go', label="Data points")
 
     # Try to fit a line to this data
     l_fit = fit_line(data, error)
     print "Fitted line: C0 = {}, C1 = {}".format(l_fit[0], l_fit[1])
     plt.plot(data[:, 0], l_fit[0] * data[:, 0] + l_fit[1], 'r--', linewidth=2.0, label="Fitted line")
-    
     # Add a legend and show plot
     plt.title("Fit a line")
     plt.legend(loc='upper left')
     plt.show()
+
 
 if __name__ == "__main__":
     test_run()

@@ -652,3 +652,5 @@ Figure the errors
 Repeat until lowest errors values
 
 
+** Works with polynomials
+- See https://discussions.udacity.com/t/where-can-i-find-the-code-lines-not-shown-in-class/47593
