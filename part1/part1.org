@@ -653,7 +653,9 @@ Repeat until lowest errors values
 
 
 ** Works with polynomials
-- See https://discussions.udacity.com/t/where-can-i-find-the-code-lines-not-shown-in-class/47593
+- See 
+- https://discussions.udacity.com/t/where-can-i-find-the-code-lines-not-shown-in-class/47593
+- http://blog.naver.com/PostView.nhn?blogId=kenshinhm&logNo=220939260978
 * 01-09 - Optimizers: How to optimize a portfolio
 ** What is portfolio optimization
 
