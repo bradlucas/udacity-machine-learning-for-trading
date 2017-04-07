@@ -52,7 +52,6 @@ Symbols
 Mutual Funds have 5 letters
 ETFs have 4 or 3 letters
 
-
 ** Incentives for fund managers
 
 Assets Under Management (AUM)
@@ -113,7 +112,6 @@ Metrics
 - Risk/Reward or Sharpe Ratio =  sqrt(252) * mean(daily_rets - rf) / daily_rets.std         "Ratio risk to reward, Risk adjusted reward"
                                  sqrt(trading days of year) * reward / risk
 
-
 ** Computing inside a hedge fund
 
 |-----------------------+-------------------+----------------+--------|
@@ -164,6 +162,7 @@ The forcast is generated possiblity with Machine Learning
 Forcasting Algorithm is typically a model. Possibly using Machine Learning
 
 
+* 02-02 - Market Mechanics
 ** What is in an order?
 
 - Buy/Sell
@@ -194,4 +193,56 @@ BUY,IBM,100,LIMIT,99.95
 SELL,IBM,1000,LIMIT,100
 
 BUY,IBM,100,MARKET
+
+** Hedge Fund
+
+Exploiting market mechanics
+
+Order book exploit
+Colocate next to exchange and view the exchange's order book before remote buyers and sellers
+Acting before orders that arrive later
+
+Geographic Arbitrage Exploit
+Exhanges are located far apart (NYSE and London)
+Colocated in both exchanges with ultra-high speed connection between
+Notice differences between the exchanges
+
+
+** Additional Order Types
+
+Exchanges
+- Buy/Sell
+- Market/Limit
+
+Broker
+Other types are implemented by the Broker
+- Stop loss
+  - Sell when stock falls to a specific value
+- Stop gain
+  - Sell when stock reaches
+- Trailing stop
+  - Stop loss that changes
+- Selling short
+
+** Short Selling
+
+You borrow 100 shares and sell them to someone else and you get the selling price
+You have the purchase amount but you owe the owner of the shares
+
+You might have to give the shares back early
+
+You are hoping that the value of the shares goes down
+If it does then you can buy the shares for less, give back the shares you own and pocket the difference
+
+** Short selling : Exit
+
+You guy at 90 from someone else
+Give back the 100 shares
+Your profit is the original 100 price you paid less the 90 you paid to get the shares to give them back
+
+** What can go wrong?
+
+What if the price goes up?
+You have to pay more to give back the shares. You lose that difference.
+
 
