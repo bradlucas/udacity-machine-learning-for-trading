@@ -245,7 +245,6 @@ What if the price goes up?
 You have to pay more to give back the shares. You lose that difference.
 
 * 02-03 - What is a company is worth
-
 ** Why company  value matters
 
 Value goes up over time (assumption)
@@ -291,7 +290,6 @@ Balch Bond Interest Rate = 5%
 What about for today?
 i is 0 to the Present Value is the Same as the Future Value
 
-
 ** Intrinsic Value
 
 The interest is related to the risk of the company.
@@ -323,7 +321,7 @@ For a discount rate of 5% the present value is $1 / 0.05 => $20
 FV is the dividend payment paid at regular intervals
 DR is the what the risk of the stock translates to an interest that we should pay
 
-** Quiz
+** Dividend Example
 
 Dividend = 2.00 / year
 Discount Rate = 4%
@@ -343,10 +341,46 @@ Total assets (fixed and intangile) - intangible assets - liabilites
 
 Market Cap = # Shares * Stock price
 
-
 ** Why information affects the stock price
 
 Main mechanism that investors 
 
 Example, negative news will reduce expectations of future dividends
+
+** Would you buy this stock
+
+Book Value
+10 airplanes at $10M each = 100M
+Brand name at $10M
+$20M loan liability
+
+BV = 80M
+80,000,000
+
+Intrinsic Value
+$1M dividends/year with 5% DR
+FV/DR = 1M/.05 = 20,000,000 = 20M
+20,000,000
+
+Market VAlue
+1M shares outstanding
+$75 stock
+1M * 75 = 75M
+75,000,000
+
+
+** Summary
+Instrinsic Value
+- Future value of dividends
+Book value
+- Value of pieces
+Market Cap
+- Market's opinion of value
+
+Strategies look for differences between the Book Value or Instrinsic Value and the Market Cap
+
+- If Intrinsic value drops while Market cap stays high it might be signal to short
+- If Dividends are going up and Market cap is low it might be signal to buy
+- Book value provides a lowest price. When Market Cap approaches the book value it is unllikely to drop
+  - if the market cap drops below book value it might be a signal to buy
 
