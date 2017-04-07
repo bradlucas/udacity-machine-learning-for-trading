@@ -1,0 +1,197 @@
+* PART 2
+- https://www.udacity.com/course/machine-learning-for-trading--ud501
+There are ten secions in Part 2
+
+* 02-01 - So you want to be a hedge fund manager
+MC2: Computational Investing
+
+Lessons: In this mini-course, we focus on modeling the behavior of stock markets.
+- So you want to be a hedge fund manager?
+- Market mechanics
+- What is a company worth?
+- The Capital Assets Pricing Model (CAPM)
+- How hedge funds use the CAPM
+- Technical Analysis
+- Dealing with data
+- Efficient Markets Hypothesis
+- The Fundamental Law of active portfolio management
+- Portfolio optimization and the efficient frontier
+
+Projects:
+- Build a market simulator
+- Invent your own technical indicator
+- Write a strategy that generates orders
+
+** Types of funds
+- ETF
+  - Electronically Traded Fund
+  - Buy/Sell like stocks
+  - Baskets of stocks
+  - Transparent
+
+- Mutual Funds
+  - Buy/Sell at end of day
+  - Quarterly disclosure
+  - Less transparent
+
+- Hedge Funds
+  - Buy/sell by agreement
+  - No disclosure
+  - Not transparent
+
+** Liquidity and capitalizatio
+
+Liquid
+How easy you can buy and sell
+
+Capitalization
+How much is the company worth using the formula # Shares * Price
+
+
+Symbols
+Mutual Funds have 5 letters
+ETFs have 4 or 3 letters
+
+
+** Incentives for fund managers
+
+Assets Under Management (AUM)
+
+ETF
+Expense Ratio
+Percentage of AUM
+0.01% (1 bip)
+1.00% is high
+
+Mutual Fund
+Expense Ratio of AUM
+0.5% to 3.00%
+
+Hedge Funds
+Two and Twenty
+2% of AUM + 20% of profits
+
+** Two and Twenty
+
+Example
+Fund's assets under management is 100,000,00
+It grows to 115M
+15% return
+
+2% of 100M = 2M
+20% of 15M = 3M
+Total = 5M
+
+
+Lately, Hedge Funds are typically lower. Example, 1 and 10
+
+SAC -> 4 and 40
+
+** How funds attract investors
+
+Hedge Funds can only have 100 investors
+
+Who?
+- Individuals
+- Instititutions
+- Funds of funds
+
+Why?
+- Track record (typically 5 years of history)
+- Simulation and story
+- Good portfolio fit
+
+** Hedge fund goals and metrics
+
+Goals
+- Beat a benchmark (SP500 for example)
+- Absolute return (Long/Short)
+
+Metrics
+- Cumulative Return = (Val[-1]/Val[0]) - 1
+- Volatility = daily_rets.std()   "standard deviation of daily returns"
+- Risk/Reward or Sharpe Ratio =  sqrt(252) * mean(daily_rets - rf) / daily_rets.std         "Ratio risk to reward, Risk adjusted reward"
+                                 sqrt(trading days of year) * reward / risk
+
+
+** Computing inside a hedge fund
+
+|-----------------------+-------------------+----------------+--------|
+| Historical Price Data |                   | Orders         |        |
+|                       |                   | orders_V.csv   |        |
+|                       |                   |                |        |
+|                       | Trading Algorithm |                | Market |
+|                       | qstrader_X.py     |                |        |
+|                       |                   |                |        |
+| Target Portfolio      |                   | Live Portfolio |        |
+|-----------------------+-------------------+----------------+--------|
+
+
+The Trading Algorithm tries to get Live Portfolio to match a Target portfolio
+You don't want to excute every thing at once else you might move the market against yourself
+
+
+Computing the Target Portolio
+
+|-----------------------+---+---------------------+---+------------------|
+| N-day forcast         |   |                     |   |                  |
+| forcast_X.h5          |   |                     |   |                  |
+|                       |   |                     |   |                  |
+|                       |   |                     |   |                  |
+| Current Portfolio     |   | Portfolio Optimizer |   | Target Portfolio |
+| portfolio_X.h5        |   | qsoptimizer_X.py    |   | portfolio_X.h5   |
+|                       |   |                     |   |                  |
+|                       |   |                     |   |                  |
+| Historical Price Data |   |                     |   |                  |
+|                       |   |                     |   |                  |
+|                       |   |                     |   |                  |
+|                       |   | Risk constraints    |   |                  |
+|-----------------------+---+---------------------+---+------------------|
+
+The forcast is generated possiblity with Machine Learning
+
+|-----------------------+----------------------+---+---------------|
+| Information Feed      |                      |   |               |
+|                       |                      |   |               |
+|                       | Forcasting Algorithm |   | N-day Forcast |
+|                       | qsforcaster_X.py     |   | forcast_X.h5  |
+|                       |                      |   |               |
+| Historical Price Data |                      |   |               |
+|                       |                      |   |               |
+|-----------------------+----------------------+---+---------------|
+
+
+Forcasting Algorithm is typically a model. Possibly using Machine Learning
+
+
+** What is in an order?
+
+- Buy/Sell
+- Symbol
+- # Shares
+- Limit or Market
+- Price
+
+The Order book
+- Each exchange keeps and order book
+
+|---------+--------+------|
+| BID/ASK |  PRICE | SIZE |
+|---------+--------+------|
+| ASK     | 100.10 |  100 |
+| ASK     | 100.05 |  500 |
+| ASK     | 100.00 | 1000 |
+| BID     |  99.95 |  100 |
+| BID     |  99.90 |   50 |
+| BID     |  99.85 |   50 |
+|---------+--------+------|
+
+BID == Buyer
+ASK == Seller
+
+ORDEr
+BUY,IBM,100,LIMIT,99.95
+SELL,IBM,1000,LIMIT,100
+
+BUY,IBM,100,MARKET
+
