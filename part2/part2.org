@@ -161,7 +161,6 @@ The forcast is generated possiblity with Machine Learning
 
 Forcasting Algorithm is typically a model. Possibly using Machine Learning
 
-
 * 02-02 - Market Mechanics
 ** What is in an order?
 
@@ -245,4 +244,109 @@ Your profit is the original 100 price you paid less the 90 you paid to get the s
 What if the price goes up?
 You have to pay more to give back the shares. You lose that difference.
 
+* 02-03 - What is a company is worth
+
+** Why company  value matters
+
+Value goes up over time (assumption)
+Stock mark price oscollates around this value
+ - If the price is higher than the value. sell
+ - Buy if the price is below the value
+
+
+- Intrisic value
+  - Future dividends
+  - How much will you get for ownership in the future
+
+- Book value
+  - Value of the company assets
+  - Company assets
+
+- Market cap
+  - Value of the stock in the market and the shares outstanding
+  - Market's opinion of the the company
+
+** The Balch Bond
+
+How much will the dollar worth in the future
+
+** The value of a future dollar
+
+Present Value = Future Value / (1 + Inerest Rate) ^ i
+
+i = number of years
+
+Example:
+
+i = 1
+
+US Govt Interest Rate = 1.%
+
+= $1.00  / (1 + 0.01) = $0.99
+
+Balch Bond Interest Rate = 5%
+
+= $1.00 / (1 + 0.05) = $0.95
+
+What about for today?
+i is 0 to the Present Value is the Same as the Future Value
+
+
+** Intrinsic Value
+
+The interest is related to the risk of the company.
+For example, the Balch Bond needed to raise it rate to attrach you over the Government bond
+
+The Discount Rate is higher if you think the company is risky
+
+
+Sum of equation for all i into the future
+
+Equation:
+
+Where n = 1 + IR
+
+Sum FV / n ^ i where i = 1 to infinity
+
+is
+
+FV / (n -1)
+
+which is
+
+FV / DR or Future Value over the Discount Rate
+
+Example, 
+
+For a discount rate of 5% the present value is $1 / 0.05 => $20
+
+FV is the dividend payment paid at regular intervals
+DR is the what the risk of the stock translates to an interest that we should pay
+
+** Quiz
+
+Dividend = 2.00 / year
+Discount Rate = 4%
+
+2.00 / .04 =  50
+
+** Book Value
+
+"Total assets minus intangible assets and liabilities"
+
+Intangible - brand, patent, etc
+
+
+Total assets (fixed and intangile) - intangible assets - liabilites
+
+** Market Capitalization
+
+Market Cap = # Shares * Stock price
+
+
+** Why information affects the stock price
+
+Main mechanism that investors 
+
+Example, negative news will reduce expectations of future dividends
 
