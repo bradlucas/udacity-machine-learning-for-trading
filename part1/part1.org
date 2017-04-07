@@ -672,6 +672,7 @@ See:
 - http://quantsoftware.gatech.edu/Machine_Learning_for_Trading_Course
 - http://quantsoftware.gatech.edu/MC1-Project-1
 - http://quantsoftware.gatech.edu/MC1-Project-2
+- http://quantsoftware.gatech.edu/Manipulating_Financial_Data_in_Python
 
 ** Using an minimizer to optimize a portfolio
 
