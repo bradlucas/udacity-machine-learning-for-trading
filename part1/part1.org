@@ -654,3 +654,68 @@ Repeat until lowest errors values
 
 ** Works with polynomials
 - See https://discussions.udacity.com/t/where-can-i-find-the-code-lines-not-shown-in-class/47593
+* 01-09 - Optimizers: How to optimize a portfolio
+** What is portfolio optimization
+
+Final Assignment: Build a portfolio optimizer
+
+Fiven a set of assets and time period find a allocation of funds to assets that maximizes performance
+
+What is performance?
+
+Cumulative return   - Maximimize Return
+Volitity or risk    - Minimize Risk 
+Risk adjuted return (Sharpe Ratio) - Maximize Sharpe Ratio
+
+See:
+- http://quantsoftware.gatech.edu/CS7646_Spring_2017#Assignments
+- http://quantsoftware.gatech.edu/Machine_Learning_for_Trading_Course
+- http://quantsoftware.gatech.edu/MC1-Project-1
+- http://quantsoftware.gatech.edu/MC1-Project-2
+
+** Using an minimizer to optimize a portfolio
+
+Portfolio
+
+2010
+
+.25 GOOG
+.25 AAPL
+.25 GLD
+.25 XOM
+
+Graph Portfolio vs SPY
+
+Optimize for Sharpe Ratio
+
+
+.00 GOOG
+.40 AAPL
+.60 GLD
+.00 XOM
+
+Graph Portfolio vs SPY
+
+** Framing the proglem
+
+- Provide a function to minimize f(x)
+- provide an initial guess for X
+- Call the optimizer
+
+X == allocations
+
+We want the largest the Sharpe Ratio.
+So, the function f is the -1 * the Sharpe Ratio.
+We multiple by -1 to get the maximum. If we didn't we'd minimze and get the smallest Sharpe Ratio
+
+** Ranges and constraints
+
+- Ranges: Limits on values for X
+  - This makes the process faster
+  - Only focus on values in the range of 0 to 1. Prevent 200% allocations
+
+- Constraints: Porperties of X that must be "true"
+  - For example, the sum of abs(X) = 1.0
+  - Our total allocation must add up to 100%
+
+    
