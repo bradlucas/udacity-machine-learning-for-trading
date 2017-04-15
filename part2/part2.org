@@ -742,6 +742,29 @@ High frequence trading. Fast, short decision, technical
 
 Human. Longer periods. Insite driven
 
+** Indictator - Momentum
+
+- Change in price over time
+- Positive or negative
+- Strenth is the slope of the line (change in price over time)
+
+- Visually
+- Draw line between two price points for a given time period
+
+- Quantitative
+- Momentum[t] = price[t] / price [t-n] - 1
+- n-day 5, 10, etc
+
+- Typical Range: -.5 to +.5
+
+
+
+
+** Indicator: Simple Moving Average
+
+** Bollinger Bands
+
+
 
 
 
