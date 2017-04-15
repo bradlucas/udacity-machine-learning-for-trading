@@ -1217,6 +1217,21 @@ Inputs:
 Output
 - Asset weights for portfolio that minimizes risk
 
+** The Efficient Frontier
+
+If you compute for all potential returns from the minimial return to the maximum
+You get a curve
+This is the efficient frontier
+
+Sometimes the curve bends in as you lower risk too far
+
+
+There are no portfolios outside the line
+Ones inside the line are in-efficient
+
+If you draw a line from the origin to the line where it hits is the Maximum Sharpe ratio
+
+
 
 
 
