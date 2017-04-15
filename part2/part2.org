@@ -849,3 +849,10 @@ Within the group
 
 Time boundaries we are going to be working with are days
 
+** Quiz : Price anomaly
+
+Stock splits result in reduced price per unit.
+
+For instance, say each stock unit is divided into two units, then the
+value of each new unit drops to half.
+
