@@ -877,5 +877,11 @@ Adjusted close or adjusted prices
 Create a timeline of data working backwards
 When you get to a split
     - Say a 2:1 price
-    - Continue back and divide the price by
+    - Continue back and divide the price by 2
+
+** Quiz : Split adjustment
+
+- At the split, actual value
+- Previous to the split, divide the price by 2 due to the 2:1 split
+
  
