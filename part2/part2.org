@@ -712,4 +712,27 @@ Why it might work
 
 ** Quiz: potential indicators
 
+- moving average of price - Technical
+- % change in volume - Technical
+- Price/earnings ratio - Fundamental
+- Intrinsic value - Fundamental
+
+** When is technical analysis valuable
+
+- Individual indicators are weak
+  - More people are trading simple indicators
+- Combinations stronger
+- Look for contrasts (stock vs market)
+- Shorter time periods
+
+Trading horizon
+milliseconds -> days -> years
+
+Technical .... -> Fundamental
+
+Fundamental is better for longer periods
+Technical is more appropriate for shorter periods
+
+
+
 
