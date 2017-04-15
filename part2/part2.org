@@ -206,7 +206,6 @@ Exhanges are located far apart (NYSE and London)
 Colocated in both exchanges with ultra-high speed connection between
 Notice differences between the exchanges
 
-
 ** Additional Order Types
 
 Exchanges
@@ -463,7 +462,6 @@ For example, APPL and XOM are about 5% of the SP500
 
 Market indexes are like the oceans with Sectors like the islands
 
-
 ** The CAPM equation
 
 Return for an individual stock on a given day is Beta times the return on the market plus Alpha that particular stock on the given day.
@@ -478,7 +476,6 @@ If you plot a stocks returns along with an index using a scatter chart.
 Then regress to a line
 
 The slope of the line is Beta and the offset from the index is Alpha
-
 
 ** Quiz
 Correlated with SP500, ABC clearly has a greater slope than XYZ, therefore higher β.
@@ -601,7 +598,6 @@ Total
 -4.5 + 10.5 = 6%
 
 
-
 ** Two stock CAPM math
 
 Return of a portfolio is the sum of the weights for each stock * the Beta * Return on the market + Alpha
@@ -640,7 +636,6 @@ Can we find weights for A and B where their Beta becomes 0
 Then we have eliminated market risk
 
 
-
 ** Quiz : Find Wa and Wb so that market risk is minimized
 
 |----------+------------|
@@ -659,7 +654,6 @@ abs(Wa) + abs(Wb) = 1
 |----------+-----------|
 | Wa = .66 | Wb = -.33 |
 |----------+-----------|
-
 
 ** How does it work?
 
@@ -708,7 +702,6 @@ Tehnical is more a trading approach than an investing approach
 Why it might work
 - There is information in the price
 - Heuristics work
-
 
 ** Quiz: potential indicators
 
@@ -796,7 +789,6 @@ BB[t] = (price[t] - SMA[t]) / 2 * std[t]
 
 Typical Range: -1.0 to 1.0
 
-
 ** Quiz: Buy or Sell
 
 - Excursion returning back through the bands are signals
@@ -855,7 +847,6 @@ Stock splits result in reduced price per unit.
 
 For instance, say each stock unit is divided into two units, then the
 value of each new unit drops to half.
-
 
 ** Stock splits
 
