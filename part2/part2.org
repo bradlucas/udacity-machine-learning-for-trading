@@ -431,6 +431,37 @@ Return B = -2%
 
 ** The market portfolio
 
+|-------+-------|
+| US    | SP500 |
+| UK    | FTA   |
+| Japan | TOPIX |
+|-------+-------|
 
 
+Cap weighted
+The individual weight is set based on the market cap of the stock
 
+Weight for individual  = Market Cap / Sum of all Market Caps
+
+A capitalization-weighted (or "cap-weighted") index, also called a
+market-value-weighted index is a stock market index whose components
+are weighted according to the total market value of their outstanding
+shares. Every day an individual stock's price changes and thereby
+changes a stock index's value.
+- http://www.investopedia.com/terms/c/capitalizationweightedindex.asp
+
+To find the value of a cap-weighted index, an analyst should multiply
+each constituent's market price by its total outstanding shares to
+arrive at the total market value. Then, the proportion of this value
+to the overall total market value of all the index components gives
+the weight of the company in the index.
+
+Read more: Capitalization-Weighted Index http://www.investopedia.com/terms/c/capitalizationweightedindex.asp#ixzz4eHgiaTpc 
+Follow us: Investopedia on Facebook
+
+For example, APPL and XOM are about 5% of the SP500
+
+Market indexes are like the oceans with Sectors like the islands
+
+
+** 
