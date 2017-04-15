@@ -921,4 +921,31 @@ period are included.
 - New information arrives randomly
 - Prices adjust quickly
 - Prices reflect all available information
+
+** Origin of information
+- Some sources organized from public to private (rough)
+
+- Price/Volume
+- Fundamental
+- Exogenous
+  - Information about the world that effects the company
+  - relating to or developing from external factors.
+  - Example, price of oil for an Airline stock
+- Company insiders
+
+** 3 Versions of the EMH
+- From weak to strong
+
+- Weak
+  - Future prices cannot be predicted by analyzing historical prices
+  - Leaves room for Fundamental
+
+- Semi-strong: Prices adjust rapidly to new public information
+  - Room for insider information
+
+- Strong: Prices reflect all information public and private
+  - If this is true then it is impossible to make money outside of a market portfolio
+
+
+
 ** 
