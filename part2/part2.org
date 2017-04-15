@@ -734,5 +734,16 @@ Fundamental is better for longer periods
 Technical is more appropriate for shorter periods
 
 
+Decision complexity increase for longer periods
+Decision speed is faster for shorter time periods
+
+High frequence trading. Fast, short decision, technical
+
+
+Human. Longer periods. Insite driven
+
+
+
+
 
 
