@@ -1027,7 +1027,6 @@ But, the risk is different
 - .49 ^ 1000 
 = a very small number
 
-
 ** Coin flip casino: Risk 2
 
 Standard deviation of individual bets
@@ -1041,7 +1040,6 @@ stdev(1000, 0, 0, 0, 0, ..., 0) = 31.62
 stdev(-1000, 0, 0, 0, 0, ..., 0) = 31.62
 
 Key point the standard deviation or risk is much larger when we take a single bet
-
 
 ** Coin flip casino: Reward/isk
 Just like Sharpe Ratio
@@ -1062,6 +1060,21 @@ Risk = std(1, -1, 1, -1, ...) = 1
 
 
 Taking potential risk into account makes such a difference, doesn't it?
+
+** Coin flip casino observation
+
+Single 1000 token bet has a Sharpe rati0oof .63
+
+Multiple 1000 token bets has a Sharpe ratio of 20
+
+SRmulti = 20
+SRsingle = .63
+
+20 = 63 * sqrt(1000)
+
+SRmulti = SRsingle * sqrt(bets)
+
+Perfformance = Skill * sqrt(breadth)
 
 
 
