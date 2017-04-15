@@ -691,3 +691,25 @@ CAPM enables
 Minimize market risk find Bp = 0
 by finding the appropriate weights to accomplish this
 
+* 02-06 - Technical Analysis
+** Technical versus fundamental analysis
+Fundamental - Aspects of company to value the company. Look for price less than value
+Technical - Don't care about the value. Look for patterns or trends in a stocks price.
+
+** Characterstics of Technical Analysis
+
+- Historical price and volume only
+- Comput statistics called indicators
+- Indicators are heuristics
+
+Some think:
+Tehnical is more a trading approach than an investing approach
+
+Why it might work
+- There is information in the price
+- Heuristics work
+
+
+** Quiz: potential indicators
+
+
