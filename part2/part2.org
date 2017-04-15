@@ -856,3 +856,26 @@ Stock splits result in reduced price per unit.
 For instance, say each stock unit is divided into two units, then the
 value of each new unit drops to half.
 
+
+** Stock splits
+
+- Why?
+- The price is too high
+
+Less liquid for 100 shares which is a popular block for personal orders as well as options
+
+Problem
+How to trade and take into account the splits
+
+Solution 
+Adjusted close
+
+Value of the company doesn't change. The number of shares changes
+To account for the splits
+Adjusted close or adjusted prices
+
+Create a timeline of data working backwards
+When you get to a split
+    - Say a 2:1 price
+    - Continue back and divide the price by
+ 
