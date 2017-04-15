@@ -802,3 +802,21 @@ Typical Range: -1.0 to 1.0
 - Excursion returning back through the bands are signals
 
 - Excurions out of the band are not a signal
+
+** Normalization
+
+|----------+------+-----|
+| SMA      |  -.5 |  .5 |
+| Momentum |  -.5 |  .5 |
+| BB       | -1.0 | 1.0 |
+| PE ratio |    1 | 300 |
+|----------+------+-----|
+
+How to use in algorithms is the value are in different ranges.
+
+Normalization
+Move all into a range of -1 to 1
+
+Normed = (Values - Mean) / Values.std()
+
+** Wrap Up
