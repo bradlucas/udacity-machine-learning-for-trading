@@ -524,10 +524,79 @@ Maybe we need multiple Beta values due to exposures to different sectors
 
 Examples, Betas for Finance, Tech, Manufacturing, etc
 
+* 02-05 - How hedges funds use the CAPM
+
+** Risks for hedge funds
+
+The information edge they are looking for is market relative.  Meaning
+they are looking for stocks which will go up more then the market when
+the market goes up and ones that go down more than the market when the
+market goes down.
+
+** Two stock screnario
+
+Predict long 1% and short 1%
+With a market return of 0% we get
+.5 + .5 = 1.00 or 1% return
+
+** Quiz : Market goes up 10%
+
+A: predict 1% over mkt with Ba = 1.0
+B: predict -1% below mkt with Bb = 2.0
+
+A: long 50
+B: short 50
 
 
+Ra = Ba * Rm  + Aa
+   = 1.0 * 10% + 1%
+   = 11%
+
+   = 11% * 50.00 
+   = $5.5
+
+Rb = Bb * Rm + Ab
+   = 2.0 * 10% + (-1%)
+   = 20% - 1%
+   = 19%
+
+   = 19% * -50 (shorted against an upward market)
+   = -9.50
 
 
+Total
+5.5 + -9.50 = -4.00
+(.5 * 11) + (.5 * -19) = -4% 
+5.5 - 9.5 = -4%
+
+Same with market going down 10%
 
 
+A: predict 1% over mkt with Ba = 1.0
+B: predict -1% below mkt with Bb = 2.0
+
+A: long 50
+B: short 50
+
+
+Ra = Ba * Rm  + Aa
+   = 1.0 * -10% + 1%
+   = -9%                     - market moved against us
+
+   = -9% * 50.00 
+   = -4.50
+
+Rb = Bb * Rm + Ab
+   = 2.0 * -10% + (-1%)
+   = -20% - 1%
+   = -21%                    - we shorted so we are with the market
+   = 21%
+
+   = -21% * -50   (shorted goes with the downward movement)
+   = 10.50
+
+Total
+-4.50 + 10.50 = 6.0
+(.5 * -9) + (.5 * 21) = 
+-4.5 + 10.5 = 6%
 
