@@ -829,4 +829,23 @@ Normed = (Values - Mean) / Values.std()
 * 02-07 - Dealing with Data
 ** Overview
 Primarily using historical price data
-** 
+
+** How is data aggregated?
+
+Tick data
+    The price and volume of the transaction at a specific time
+
+Consolidated data/ Grouped
+    Minute, hour, day
+
+Within the group
+    Open - first value
+    High - highest value in the the group
+    Low - lowest value in the group
+    Close - last value
+    
+    Volume - sum of all volume values for all ticks in the group
+
+
+Time boundaries we are going to be working with are days
+
