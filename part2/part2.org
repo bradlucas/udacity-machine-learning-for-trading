@@ -1205,3 +1205,19 @@ Negative = move opposite
 
 If you blend anti-correlated values you'll reduce volatility 
 
+** Mean Variance Optimization (MVO)
+
+
+Inputs:
+- Expected return
+- Volatility
+- Covariance
+- Target return
+
+Output
+- Asset weights for portfolio that minimizes risk
+
+
+
+
+
