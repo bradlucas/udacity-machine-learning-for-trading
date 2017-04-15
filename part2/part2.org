@@ -826,3 +826,7 @@ Normed = (Values - Mean) / Values.std()
   - There are other people's approach
 - Don't start trading yet
   - Still more to learn
+* 02-07 - Dealing with Data
+** Overview
+Primarily using historical price data
+** 
