@@ -820,3 +820,9 @@ Move all into a range of -1 to 1
 Normed = (Values - Mean) / Values.std()
 
 ** Wrap Up
+
+- Heruristics
+- Tucker's approach
+  - There are other people's approach
+- Don't start trading yet
+  - Still more to learn
