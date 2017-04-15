@@ -1014,7 +1014,36 @@ Multiple Bets
 Expected return (reward) is the same
 But, the risk is different
 
+** Coin flip casino: Risk 1
 
+- Lose it all
+
+- Single bet 49%
+
+
+- Muli-bet?
+- Probability for the first table * the next * the next
+- = .49 * .49 * .49 ... 
+- .49 ^ 1000 
+= a very small number
+
+
+** Coin flip casino: Risk 2
+
+Standard deviation of individual bets
+
+One token per table
+stdev(-1, 1, 1, 1, -1, ... -1) 
+
+
+One 1000 token bet, 999 0 token bets on the other tables
+stdev(1000, 0, 0, 0, 0, ..., 0) = 31.62
+stdev(-1000, 0, 0, 0, 0, ..., 0) = 31.62
+
+Key point the standard deviation or risk is much larger when we take a single bet
+
+
+** 
 
 
 
