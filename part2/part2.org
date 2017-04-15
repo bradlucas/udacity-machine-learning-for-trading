@@ -1,6 +1,7 @@
 * PART 2
 - https://www.udacity.com/course/machine-learning-for-trading--ud501
-There are ten secions in Part 2
+- There are ten sections in Part 2
+- There were no code assignments or examples
 
 * 02-01 - So you want to be a hedge fund manager
 MC2: Computational Investing
