@@ -1149,6 +1149,7 @@ How many trades (Breadth) to match
 sqrt(Breadth) = 10950
 
 Breadth = (1000 * sqrt(120)) ^ 2
+        = 1000000 * 120
+        = 120000000
+        = 120 million
 
-120 million
-119999999.99999995028565
