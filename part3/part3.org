@@ -1,0 +1,21 @@
+* PART 3
+- https://www.udacity.com/course/machine-learning-for-trading--ud501
+** 03-01 - Overview
+Building models
+
+*** The ML problem
+
+x -> Model -> y
+
+Observation -> Model -> Prediction
+
+Data -> ML -> Model
+
+*** What's X and Y
+
+Future price or return are predictions
+
+*** Supervised Regression Learning
+
+
+
