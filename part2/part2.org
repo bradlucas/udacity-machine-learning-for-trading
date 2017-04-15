@@ -641,3 +641,47 @@ Then we have eliminated market risk
 
 
 
+** Quiz : Find Wa and Wb so that market risk is minimized
+
+|----------+------------|
+| Ba = 1.0 | Aa = +1.0% |
+| Bb = 2.0 | Ab = -1.0% |
+|----------+------------|
+
+Ba*Wa + Bb*Wb = 0
+1.0*Wa + 2.0*Wb = 0
+1.0 * Wa + 2.0 * -Wb = 0
+1.0 * Wa = 2.0 Wb
+
+Wa = 2.0 * Wb
+abs(Wa) + abs(Wb) = 1
+
+|----------+-----------|
+| Wa = .66 | Wb = -.33 |
+|----------+-----------|
+
+
+** How does it work?
+
+Rm = 10%
+
+|----------+-----------|
+| Wa = .66 | Wb = -.33 |
+|----------+-----------|
+
+A: predict 1% over mkt with Ba = 1.0
+B: predict -1% below mkt with Bb = 2.0
+
+
+Rp = (.66 * 1.0)Rm + (-.33 * 2.0)Rm + WaAa + WbAb
+Rp = .66 * 1.0% + -.33* -1.0
+Rp = 0 + WaAa + WbAb
+Rp = .66*1% + -.33*-1
+Rp = 1.0%
+
+No guarentees on Betas continuing but still we've reduced market exposure
+
+
+
+
+
