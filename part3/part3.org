@@ -79,3 +79,40 @@ Model defaults -> Factors
 Forecast -> 1 week
 Lookback -> 3 months
 
+*** Backtesting
+
+Roll back time and test on historical data
+Limit data to previous data
+and see how the system performs predicting the next data
+
+*** ML tool in use
+
+Example from QuantDesk
+
+*** Problems with regresssion
+
+Regression based forecasing can be useful
+
+Thoughs issues:
+
+- Nosiy and uncertain
+- Challenging to estimate confidence
+- Holding time, allocation. How to decide
+
+
+Another idea:
+Policy learning / Reenforcement Learning
+more later on this
+
+*** Problem we will focus on
+
+Period - 2009
+
+Text over the period - 2010 and 2011
+
+Generate orders.txt and push through your market simulator
+
+
+
+
+
