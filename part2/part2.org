@@ -946,7 +946,6 @@ period are included.
 - Strong: Prices reflect all information public and private
   - If this is true then it is impossible to make money outside of a market portfolio
 
-
 ** Quiz: the EMH prohibits
 
 |-------------+------+-------------+--------|
@@ -956,4 +955,10 @@ period are included.
 | Fundamental |      | -           | -      |
 | Insider     |      |             | -      |
 |-------------+------+-------------+--------|
+
+** Is the EMH correct?
+
+Some Hedge Funds prove that it isn't
+
+We've seen people make money from insider information (strong)
 
