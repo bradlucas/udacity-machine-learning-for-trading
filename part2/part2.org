@@ -1172,4 +1172,36 @@ Volatility is the standard deviation of historical daily returns
 
 (there are other methods to measure risk)
 
+** Vsualizing returns vs risk
+
+Returns on the y axis and risk on the x axis
+Scatter plot
+
+Weight for each results in a portfolio reward/risk somewhere in the middle
+
+
+** Building a portfolio
+
+Visual quiz
+
+** Can we do better?
+
+Old days, build a portfolio manually with equal weights or by focusing in different directions
+
+Better? Can you build a portfolio with lower risk than any of the equities
+
+Harry Markowitz
+Relationship between stocks due to covariance
+
+** Why covariance matters
+
+Look at two stocks
+Note how some move together and some move apart (opposite) though they may have similar overall returns
+
+Covariance of daily returns which is the smae as the correalation coefficent of daily returns
+
+Positive = move together
+Negative = move opposite
+
+If you blend anti-correlated values you'll reduce volatility 
 
