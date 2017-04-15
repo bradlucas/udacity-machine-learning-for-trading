@@ -39,6 +39,31 @@ Training with data
 - Decision forests
   - Collections of trees
 
-*** 
+*** Robot navigation example
+
+video
+
+*** How it works with stock data
+
+Go back into the historical data
+Pick a Y and then an X which is say 5 days prior
+Then move forward and capture each instance or data point and save
+
+This can be your training data
+
+X's can be muli-dimensional
+They are called factors
+
+
+*** Example at a fintech company
+
+Lucena Research
+
+- Select X1, S2, X3, ... predictive factors
+- Select Y. What you are interested in predicting
+- Time period, stock universe
+- Train
+  - Takes data and creates a model
+
 
 
