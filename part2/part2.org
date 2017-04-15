@@ -962,3 +962,20 @@ Some Hedge Funds prove that it isn't
 
 We've seen people make money from insider information (strong)
 
+* 02-09 - The Fundamental Law of active portfolio managment
+
+** Grinaold's Fundamental Law
+- Performance
+- Skill
+- Breadth
+
+
+performance = skill * sqrt(breadth)
+
+Information Ratio (IR) = Information Coeeficient IC * Sqrt (Breadth)
+
+Breadth is the number of trading opportunities
+
+** The coin flipping casino
+
+
