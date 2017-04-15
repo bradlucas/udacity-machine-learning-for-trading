@@ -757,13 +757,44 @@ Human. Longer periods. Insite driven
 
 - Typical Range: -.5 to +.5
 
+** Indicator: Simple Moving Average (SMA)
+
+- n-day window
+
+- For a given day calculate the average price for the previous n days
+
+- SMA lags the movement of the price
 
 
+Two ways to use:
+- Look for prices which cross the SMA line
+  - Combine with strong momentum may be a signal
 
-** Indicator: Simple Moving Average
+- Proxy for underlying value
+   - If the price has a strong divergance from the SMA. May have an arbitrage opportunity
+
+- Quantitatve
+- Percent diff from price
+
+SMA[t] = ( price[t] / price[t-n:t].mean() ) - 1
+
+Typical range : -.50 to +.50
 
 ** Bollinger Bands
 
+Low volitity use smaller excursion
+High volotility use wider excurions
+
+Use standard deviation
+Say 2 degress
+
+How to use
+Lookg for cross from outside to the inside
+
+
+BB[t] = (price[t] - SMA[t]) / 2 * std[t]
+
+Typical Range: -1.0 to 1.0
 
 
 
