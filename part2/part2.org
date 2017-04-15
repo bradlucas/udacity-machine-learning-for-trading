@@ -368,7 +368,6 @@ $75 stock
 1M * 75 = 75M
 75,000,000
 
-
 ** Summary
 Instrinsic Value
 - Future value of dividends
@@ -383,4 +382,55 @@ Strategies look for differences between the Book Value or Instrinsic Value and t
 - If Dividends are going up and Market cap is low it might be signal to buy
 - Book value provides a lowest price. When Market Cap approaches the book value it is unllikely to drop
   - if the market cap drops below book value it might be a signal to buy
+
+* 02-04 - The Capital Asset Pricing Model
+CAPM
+1960s
+
+The capital asset pricing model (CAPM) is a model that describes the
+relationship between systematic risk and expected return for assets,
+particularly stocks.
+
+The CAPM was introduced by Jack Treynor (1961, 1962),[4] William
+F. Sharpe (1964), John Lintner (1965a,b) and Jan Mossin (1966)
+independently, building on the earlier work of Harry Markowitz on
+diversification and modern portfolio theory. Sharpe, Markowitz and
+Merton Miller jointly received the 1990 Nobel Memorial Prize in
+Economics for this contribution to the field of financial economics.
+
+- https://en.wikipedia.org/wiki/Capital_asset_pricing_model
+- http://www.investopedia.com/articles/06/capm.asp
+- http://www.investopedia.com/terms/c/capm.asp
+
+** Definition of a portfolio
+
+- Weighted set of assets
+- wi : portion of funds in asset i
+- Sum of Wi = 1.0
+
+- 60%, 20%, 20%
+
+- Shorting -20%
+- Sow Sum of ABS of weights
+
+Returns on a portfolio
+
+Sum for each asset it's weight * return
+
+Stock A = 75%
+Stock B = -25%
+
+Return A = 1%
+Return B = -2%
+
+= .75 * 1% + -.25% * -2%
+
+= 75 + 1%
+= .75 + .5
+= 1.25%
+
+** The market portfolio
+
+
+
 
