@@ -963,7 +963,6 @@ Some Hedge Funds prove that it isn't
 We've seen people make money from insider information (strong)
 
 * 02-09 - The Fundamental Law of active portfolio managment
-
 ** Grinaold's Fundamental Law
 - Performance
 - Skill
@@ -977,5 +976,46 @@ Information Ratio (IR) = Information Coeeficient IC * Sqrt (Breadth)
 Breadth is the number of trading opportunities
 
 ** The coin flipping casino
+
+- Flip coins instead of stocks
+- The coin is biased - like Alpha (0.51 heads)
+- Uncertainty is like Beta
+
+Betting
+Even money betting
+- Win: now have 2N
+- Lose: now have 0
+
+Casino
+1000 tables
+1000 tokens
+Game runs in parallel
+
+** Quiz: Which bet is better
+
+Less risky
+1 token on each of the 1000 tokens
+
+** Quiz: Coin-Flip Casino: Reward
+
+Expected return
+
+Single bet (Bet 1000 chips at once)
+
+- notice -1000 (negative) for .49 percent chance of lossing
+.51 * 1000 + .49 * -1000 =  
+510 - 490 = 20
+
+Multiple Bets
+
+1000(.51 * 1 + .49 * -1)
+1000(.02) = 20
+
+Expected return (reward) is the same
+But, the risk is different
+
+
+
+
 
 
