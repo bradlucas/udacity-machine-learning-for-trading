@@ -915,3 +915,10 @@ often causes the results of studies to skew higher because only
 companies which were successful enough to survive until the end of the
 period are included.
 - https://en.wikipedia.org/wiki/Survivorship_bias
+* 02-08 - Efficient Markets Hypothesis
+** Assumptions
+- Large number of investors
+- New information arrives randomly
+- Prices adjust quickly
+- Prices reflect all available information
+** 
