@@ -66,4 +66,16 @@ Lucena Research
   - Takes data and creates a model
 
 
+*** Price forcasting demo
+
+QuantDesk
+Cloud-based application created by Lucena Research
+
+Select Forecasting Options
+
+Select Model
+Model defaults -> Factors
+
+Forecast -> 1 week
+Lookback -> 3 months
 
