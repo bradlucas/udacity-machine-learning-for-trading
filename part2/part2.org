@@ -1000,13 +1000,13 @@ Less risky
 
 Expected return
 
-Single bet (Bet 1000 chips at once)
+- Single bet (Bet 1000 chips at once)
 
-- notice -1000 (negative) for .49 percent chance of lossing
+Notice -1000 (negative) for .49 percent chance of lossing
 .51 * 1000 + .49 * -1000 =  
 510 - 490 = 20
 
-Multiple Bets
+- Multiple Bets
 
 1000(.51 * 1 + .49 * -1)
 1000(.02) = 20
@@ -1033,7 +1033,7 @@ But, the risk is different
 Standard deviation of individual bets
 
 One token per table
-stdev(-1, 1, 1, 1, -1, ... -1) 
+stdev(-1, 1, 1, 1, -1, ... -1) = 1.0
 
 
 One 1000 token bet, 999 0 token bets on the other tables
@@ -1043,8 +1043,25 @@ stdev(-1000, 0, 0, 0, 0, ..., 0) = 31.62
 Key point the standard deviation or risk is much larger when we take a single bet
 
 
-** 
+** Coin flip casino: Reward/isk
+Just like Sharpe Ratio
 
+- Single bet case
+
+Reward (Expected Return) / Risk
+
+20 / 31.62 = 0.63
+
+Adjusted Risk reward is 0.63
+
+
+- Multi bet case
+
+Reward = 1000( .51*1 + .49* -1) = 20
+Risk = std(1, -1, 1, -1, ...) = 1
+
+
+Taking potential risk into account makes such a difference, doesn't it?
 
 
 
