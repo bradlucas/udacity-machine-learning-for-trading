@@ -876,3 +876,13 @@ When you get to a split
 - Previous to the split, divide the price by 2 due to the 2:1 split
 
  
+** Dividends
+
+Date of 1.00 dividend
+When announced the price of the stock will rise 1.00
+
+Price will rise from 100 to 101 because everyone knows they'll have one share worth 100 plus 1.00
+
+On the day of the dividend the price will fall to 100 because you'll get the 1.00 dividend in addition
+
+
