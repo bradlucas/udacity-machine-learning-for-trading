@@ -1,6 +1,6 @@
 * PART 3
 - https://www.udacity.com/course/machine-learning-for-trading--ud501
-** 03-01 - Overview
+** 03-01 - How Machine Learning is used at a hedge fund
 Building models
 
 *** The ML problem
@@ -17,5 +17,28 @@ Future price or return are predictions
 
 *** Supervised Regression Learning
 
+Supervised
+Provide examples of x and y
+
+Regression
+Numerical approximation or prediction
+
+Learning
+Training with data
+
+
+- Linear regression (parametric)
+  - Finds the parameters for a model
+
+- K nearest neighbor (KNN) (instance based)
+  - Instance based because the data is kept from the training and consulted
+
+- Decision trees
+  - Query goes through the tree. Each node is a question. Reach a leave which is the regression value which is returned
+
+- Decision forests
+  - Collections of trees
+
+*** 
 
 
