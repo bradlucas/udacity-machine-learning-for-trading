@@ -630,3 +630,14 @@ Rp = -.5 * 10% + 1%
 Rp = -5% + 1%
 Rp = -4%
 
+Note:
+Rp = Beta * Rm + Alpha
+
+Alpha is from information
+We have no information about Rm
+
+Can we find weights for A and B where their Beta becomes 0 
+Then we have eliminated market risk
+
+
+
