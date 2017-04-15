@@ -681,7 +681,13 @@ Rp = 1.0%
 
 No guarentees on Betas continuing but still we've reduced market exposure
 
+** CAPM for hedge funds summary
 
+Assuming 
+Information - Alpha i
+Beta i
 
-
+CAPM enables
+Minimize market risk find Bp = 0
+by finding the appropriate weights to accomplish this
 
