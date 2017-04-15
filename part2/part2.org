@@ -1152,3 +1152,24 @@ Breadth = (1000 * sqrt(120)) ^ 2
         = 120000000
         = 120 million
 
+* 02-10 - Portfolio optimization and the efficient frontier
+
+Given a set of equities that you think are a good investment
+How much of your portoflio should you invest in each stock
+
+On appropach is:
+Mean variance optimization or portfolio optimization
+
+Given:
+Set of equities and a target return
+
+Find:
+Allocation to each equity that minimizes risk
+
+** What is risk?
+
+Volatility is the standard deviation of historical daily returns
+
+(there are other methods to measure risk)
+
+
