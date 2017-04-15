@@ -947,5 +947,13 @@ period are included.
   - If this is true then it is impossible to make money outside of a market portfolio
 
 
+** Quiz: the EMH prohibits
 
-** 
+|-------------+------+-------------+--------|
+|             | Weak | Semi-Strong | Strong |
+|-------------+------+-------------+--------|
+| Technical   | -    | -           | -      |
+| Fundamental |      | -           | -      |
+| Insider     |      |             | -      |
+|-------------+------+-------------+--------|
+
