@@ -464,4 +464,70 @@ For example, APPL and XOM are about 5% of the SP500
 Market indexes are like the oceans with Sectors like the islands
 
 
-** 
+** The CAPM equation
+
+Return for an individual stock on a given day is Beta times the return on the market plus Alpha that particular stock on the given day.
+
+A significant part of the return is based on the market (Beta).
+
+A stock with a Beta a 1 means that the stock tracks with the market. 
+
+The CAPM says that the expectation for Alpha is 0.
+
+If you plot a stocks returns along with an index using a scatter chart.
+Then regress to a line
+
+The slope of the line is Beta and the offset from the index is Alpha
+
+
+** Quiz
+Correlated with SP500, ABC clearly has a greater slope than XYZ, therefore higher β.
+It also has a larger Y-intercept (α).
+
+** CAPM vs active management
+
+Passive : buy index and hold
+Active  : pick stocks
+
+CAPM says Alpha is random and approaches 0
+Active managers believe they can predict Alpha
+
+** CAPM for portfolios
+
+Beta for the portfolio * Return on the market + Alpha for the porfolio
+
+** Quiz
+
+You want a higher β in upward markets so that you can ride the surge, but a lower β in downward markets so you don't crash as much.
+
+** Implications of CAPM
+
+Beta * Return on the market + Alpha
+
+Expected value of Alpha = 0
+Only way to beat the market is to choose Beta
+
+High Beta in up markets
+Low Beta in down markets
+
+Efficient Markets Hypothesis (EMH) says you can't redict the market
+
+Which means you can beat the market
+
+True? Some don't think so
+
+** Arbitrage Pricing Theory (APT)
+
+Stephen Ross (1976)
+
+Maybe we need multiple Beta values due to exposures to different sectors
+
+Examples, Betas for Finance, Tech, Manufacturing, etc
+
+
+
+
+
+
+
+
