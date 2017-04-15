@@ -1077,4 +1077,14 @@ SRmulti = SRsingle * sqrt(bets)
 Perfformance = Skill * sqrt(breadth)
 
 
+** Coin flip Casino: Lessons
+
+Risk and Reward
+
+1. Higher Alpha generates higher Sharpe ratios
+2. More execution opportunities lead to higher Sharpe ratios
+3. Sharpe ratio grows at the rate of the square root of the breadth
+
+
+
 
