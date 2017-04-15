@@ -525,7 +525,6 @@ Maybe we need multiple Beta values due to exposures to different sectors
 Examples, Betas for Finance, Tech, Manufacturing, etc
 
 * 02-05 - How hedges funds use the CAPM
-
 ** Risks for hedge funds
 
 The information edge they are looking for is market relative.  Meaning
@@ -540,6 +539,7 @@ With a market return of 0% we get
 .5 + .5 = 1.00 or 1% return
 
 ** Quiz : Market goes up 10%
+- NOTE: when we short the weight is negative
 
 A: predict 1% over mkt with Ba = 1.0
 B: predict -1% below mkt with Bb = 2.0
@@ -599,4 +599,34 @@ Total
 -4.50 + 10.50 = 6.0
 (.5 * -9) + (.5 * 21) = 
 -4.5 + 10.5 = 6%
+
+
+
+** Two stock CAPM math
+
+Return of a portfolio is the sum of the weights for each stock * the Beta * Return on the market + Alpha
+Rp = SUM( Wi * (Bi * Ri + Ai))
+
+If we short the stock the weight is negative
+
+Example:
+
+|----------+------------+----------|
+| Wa = .5  | Aa = 1.0%  | Ba = 1.0 |
+| Wb = -.5 | Ab = -1.0% | Bb = 2.0 |
+|----------+------------+----------|
+
+Rm = 10%
+
+Rp = SUM( Wi * (Bi * Ri + Ai))
+Rp = (WaBa + WbBb)Rm + WaAa + WbAb
+Rp = (.5*1.0 + -5*2.0)* 10% + .5*1.0% + -.5*-1.0%
+Rp = (.5 + -1)*Rm + .5 + .5
+Rp = -.5*Rm + .5 + .5
+Rp = -.5*Rm + 1%
+
+Rm = 10%
+Rp = -.5 * 10% + 1%
+Rp = -5% + 1%
+Rp = -4%
 
