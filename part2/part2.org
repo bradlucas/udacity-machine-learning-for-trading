@@ -1076,7 +1076,6 @@ SRmulti = SRsingle * sqrt(bets)
 
 Perfformance = Skill * sqrt(breadth)
 
-
 ** Coin flip Casino: Lessons
 
 Risk and Reward
