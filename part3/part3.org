@@ -247,7 +247,6 @@ class LinRegLearner::
 - ...
 
 ** 03-03 - Assessing a learning algorithm
-
 *** Overview
 
 There are many algorithms other than linear regression and knn
@@ -282,7 +281,6 @@ points.
 D = 1 is a linear model, results in a line
 D = 2 is a parabola 
 D = 3 has a cubed component
-
 
 *** Metric 1 RMS error
 
@@ -320,4 +318,54 @@ Make sure the training data is always before the test data.
 
 Use smaller sets and roll forward for each trial
 
+*** Metric 2: correlation
+Take XTest and YText to get YPredict
 
+Then plot YTest and YPredict (Scatter Plot)
+Is there an alignment
+
+Measure this quantitative using correlation
+
+
+numpy.corrcoef()
+
+-1 -> 0 -> +1
+
+*** Quiz : Correlation and RMS error
+
+As RMS error increases, correlation goes down.
+
+*** Overfitting
+
+Degrees of freedom (d) (degrees of the polynomial)
+
+Error is highest when d is the lowest
+As you increase d and approach the number data points the error goes to 0
+
+Done with Training data results in what is called 'in sample error'
+
+
+If you plot the out of sample error it will decrease but will curve up
+Where it curves/diverges is overfitting
+- in sample is decreasing
+- out of sample is increasing
+
+*** Quiz : KNN overfitting
+
+K from 1 to N
+
+Error is the is the lowest when K is 1
+
+-- 
+
+When k = 1, the model fits the training data perfectly, therefore
+in-sample error is low (ideally, zero).  Out-of-sample error can be
+quite high.
+
+As k increases, the model becomes more generalized, thus out-of-sample
+error decreases at the cost of slightly increasing in-sample error.
+
+After a certain point, the model becomes too general and starts
+performing worse on both training and test data.
+
+*** 
