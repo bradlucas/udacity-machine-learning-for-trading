@@ -295,7 +295,7 @@ RMSE = sqrt( sum( Ytest - Ypredict) ^ 2 / N )
 What is the out of sample?
 Find the error while using the Test set
 
-*** Quiz : Which is worse
+*** Quiz: Which is worse
 
 You would expect out-of-sample error to be larger, since the model has not seen points from the test set.
 
@@ -331,7 +331,7 @@ numpy.corrcoef()
 
 -1 -> 0 -> +1
 
-*** Quiz : Correlation and RMS error
+*** Quiz: Correlation and RMS error
 
 As RMS error increases, correlation goes down.
 
@@ -350,7 +350,7 @@ Where it curves/diverges is overfitting
 - in sample is decreasing
 - out of sample is increasing
 
-*** Quiz : KNN overfitting
+*** Quiz: KNN overfitting
 
 K from 1 to N
 
