@@ -486,4 +486,16 @@ Boosting and bagging
 - Hidden inside the same API. Callers don't need to know
 - Reduces error
 - Reduces overfitage
+** 03-05 - Reinforcement learning
+*** Overview
+
+Up until this point we've focused forcast price changes and we buy the stocks with the most predicited price change.
+
+This ignores the certainty of the price change and it doesn't help us know when to exit the position
+
+Next, 
+
+Reinforement learners create policies which provide specific direction on which action to take
+
+
 
