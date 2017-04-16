@@ -452,3 +452,39 @@ overfitting.
 An ensemble of such learners trained on slightly different datasets
 will at least be able to provide some generalization, and typically
 less out-of-sample error.
+
+*** Bagging example
+
+Each run looks like it is overfitting
+Taking the mean of all the runs looks much more smooth
+
+*** Boosting
+
+AdaBoost (Adaptive Boost)
+
+Use the training data after building the model to test the model
+
+Build the next bag of data using the test results to weigh the choosen data according the errors found during the test run
+
+Now, test both bags, combine outputs to build a new bag
+
+Repeat
+
+https://en.wikipedia.org/wiki/AdaBoost
+
+*** Quiz: Overfitation
+
+As m increases, AdaBoost tries to assign more and more specific data
+points to subsequent learners, trying to model all the difficult
+examples.
+
+Thus, compared to simple bagging, it may result in more overfitting.
+
+*** Summary
+
+Boosting and bagging
+- Wrappers for exisitng methods
+- Hidden inside the same API. Callers don't need to know
+- Reduces error
+- Reduces overfitage
+
