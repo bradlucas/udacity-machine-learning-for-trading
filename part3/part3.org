@@ -443,7 +443,6 @@ accurate to say that in most implementations, n’ = n. Because the
 training data is sampled with replacement, about 60% of the instances
 in each bag are unique.
 
-
 *** Quiz: Overfitting
 
 A 1NN model (kNN with k = 1) matches the training data exactly, thus
