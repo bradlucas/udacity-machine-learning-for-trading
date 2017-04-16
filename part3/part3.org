@@ -524,5 +524,18 @@ State -> Policy(s)      -> Action
 
 *** Quiz: Trading as an RL Problem
 
+|-------------------+-------+--------+--------+---|
+|                   | State | Action | Reward |   |
+|-------------------+-------+--------+--------+---|
+| Buy               |       | X      |        |   |
+| Sell              |       | X      |        |   |
+| Holding Long      | X     |        |        |   |
+| Bollinger Value   | X     |        |        |   |
+| Return from trade |       |        | X      |   |
+| Daily Return      | X     |        | X      |   | 
+|-------------------+-------+--------+--------+---|
+
+
+
 
 
