@@ -144,5 +144,32 @@ Look at the data for nearest data points to answer a query
 
 Since we are trying to predict y (rain) at given x (change in pressure), using the mean of nearest observed y values makes sens
 
-*** 
+*** Kernel Regression
+
+You can repeat the process for all of the data points and you'll have a fitted line
+
+Methods:
+- K nearest neighbor (KNN)
+  - non-weighted
+
+- Kernel Regression
+  - weighted
+
+
+Instance based, keep the data and it is consulted when you make a query
+
+*** Quiz: Parametric vs non?
+
+Yes, the cannon ball distance can be best estimated using a parametric model, as it follows a well-defined trajectory.
+
+On the other hand, the behavior of honey bees can be hard to model mathematically. Therefore, a non-parametric approach would be more suitable.
+
+If you can quess at an equation a parametric model might work. If you don't or the data doesn't appear to be equation based, try a non-parametric
+
+Parameteric doesn't have to store the data but you need it to re-train or add data.
+Training is slow, query is fast
+
+Non-Parameteric
+You need to store the data and adding data is eadiy
+Training is fast but querying can be slow
 
