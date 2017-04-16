@@ -220,5 +220,33 @@ learner.train(Xtrain, Ytrain)
 y = learner.query(Xtest)
 
 
+*** Example for linear regression
 
+#+BEGIN_SRC python
+
+class LinRegLearner::
+
+    def __init__():
+        pass
+
+    def train(X, Y):
+        # find m and b for y = mx + b
+        self.m, self.b = favorite_linreg(X, Y)         # see scipy, numpy
+
+    def query(X):
+        y = self.m * X + self.b
+        return y
+
+#+END_SRC
+
+- https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.linregress.html
+- scipy.stats.linregress
+
+
+- KNN should have the same interface so you can try either type easily
+
+
+- http://www.kdnuggets.com/2016/01/implementing-your-own-knn-using-python.html
+- https://ashokharnal.wordpress.com/tag/k-nearest-neighbor-classification-example-using-python/
+- ...
 
