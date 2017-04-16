@@ -682,8 +682,20 @@ Details
   - Now have a complete experience tuple <a, a, s!, r>
 - update Q
 
+*** Update rule
+
+Alpha is the learning rate 0 to 1.0 (usually 0.2)
+
+Q![s, a] = (1 - Alpha) Q[s, a] + A * improved estimate
+
+Lower Alpha, slowing learning
+
+Gamma is the discount rate 0 to 1.0
+    - low value means we value later values less
+
+Q![s, a] = (1 - Alpha) Q[s, a] + Alpha (r + Gamaa later rewards)
 
 
-
-
+                                           - future discounted rewards
+Q![s, a] = (1 - Alpha) Q[s, a] + Alpha (r + Gamaa * Q[s!, argmaxa (Q[s!, a!])])
 
