@@ -664,6 +664,24 @@ PIE*(s) = the star means optimal
 
          Q*[s, a]
 
+*** Learning Procedure
+
+
+Big picture
+- select training data
+- iterate over time <s, a, s:r>
+- test policy PIE
+- repeat until converg
+
+Details
+- set starttime, init Q[]
+  - initial Q table with small random numbers
+- compute S
+- select a
+- observe r, s!
+  - Now have a complete experience tuple <a, a, s!, r>
+- update Q
+
 
 
 
