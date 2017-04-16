@@ -622,6 +622,24 @@ RL summary
 | A | Buy/sell/hold/do nothing            |
 | R | Returns                             |
 |---+-------------------------------------|
-| T | Market                              |
+| T | Transitions/Market                  |
 |   | ML algorithms to produce PIE/Policy |
 |---+-------------------------------------|
+
+** 03-06 - Q-Learning
+
+*** Overview
+
+Q-Learning
+Model free approach
+Does not model Transitions or Rewards
+
+
+Builds a table of utility values as the agent interacts with the world
+These q values can be used at each step to select the best action based on what it has learned so far.
+
+Guaranteed to provide an optimal policy
+
+
+
+
