@@ -559,6 +559,30 @@ Policy PIE[s] wthat will maximize reward
 
 PIE* is the optimum policy
 
+*** Unknown transitions and rewards
+
+We don't have the PIE environment/function nor the Reward function
+
+Experience tuble 
+<s1 a1 s1! r1>
+<s2 a2 s2! r2>
+.
+.
+.
+<sn an sn! rn>
+
+
+**** Model based reinforcment learning
+
+Build T[a, a, s!] and R[s, a] from our list of experiences. Easy. Table-based.
+
+Value/policy iterations
+
+**** Model-free
+
+Build model directly by looking at the data
+
+
 
 
 
