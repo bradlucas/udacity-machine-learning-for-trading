@@ -714,3 +714,12 @@ Here:
 - s' is the resulting next state,
 - argmaxa'(Q[s', a']) is the action that maximizes the Q-value among all possible actions a' from s', and,
 - α ∈ [0, 1] (alpha) is the learning rate used to vary the weight given to new experiences compared with past Q-values.
+
+*** Two finer points
+
+- Success depends on exploration
+- choose random action with probability c (say .3)
+- over each iteration reduce the random actions
+
+
+
