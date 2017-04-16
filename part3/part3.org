@@ -279,7 +279,7 @@ results in our model trying to closely align with the given data
 points.
 
 D = 1 is a linear model, results in a line
-D = 2 is a parabola 
+D = 2 is a parabola
 D = 3 has a cubed component
 
 *** Metric 1 RMS error
@@ -356,7 +356,7 @@ K from 1 to N
 
 Error is the is the lowest when K is 1
 
--- 
+--
 
 When k = 1, the model fits the training data perfectly, therefore
 in-sample error is low (ideally, zero).  Out-of-sample error can be
@@ -368,7 +368,7 @@ error decreases at the cost of slightly increasing in-sample error.
 After a certain point, the model becomes too general and starts
 performing worse on both training and test data.
 
--- 
+--
 
 Overfitting happens earlier, lower k values
 
@@ -386,7 +386,7 @@ Overfitting happens earlier, lower k values
 ** 03-04 Ensemble learners, bagging and boosting
 *** Overview
 
-1988 - "Can a set of weak learners be combined to create a stronger learner?" Kearns and Valiant . 
+1988 - "Can a set of weak learners be combined to create a stronger learner?" Kearns and Valiant .
 2006 - Netflix competition
 2009 - The winning algorithm was a combination of learners, an ensemble
 
@@ -493,7 +493,7 @@ Up until this point we've focused forcast price changes and we buy the stocks wi
 
 This ignores the certainty of the price change and it doesn't help us know when to exit the position
 
-Next, 
+Next,
 
 Reinforement learners create policies which provide specific direction on which action to take
 
@@ -518,7 +518,7 @@ Reward. Take actions which maximimize the rewards
          Learning
 
 State -> Policy(s)      -> Action
-         Lookup table  
+         Lookup table
 
          Reward
 
@@ -532,7 +532,7 @@ State -> Policy(s)      -> Action
 | Holding Long      | X     |        |        |   |
 | Bollinger Value   | X     |        |        |   |
 | Return from trade |       |        | X      |   |
-| Daily Return      | X     |        | X      |   | 
+| Daily Return      | X     |        | X      |   |
 |-------------------+-------+--------+--------+---|
 
 *** Mapping trading to RL
@@ -563,7 +563,7 @@ PIE* is the optimum policy
 
 We don't have the PIE environment/function nor the Reward function
 
-Experience tuble 
+Experience tuble
 <s1 a1 s1! r1>
 <s2 a2 s2! r2>
 .
@@ -721,5 +721,32 @@ Here:
 - choose random action with probability c (say .3)
 - over each iteration reduce the random actions
 
+*** The Trading Problem - Actions
 
+- Buy
+- Sell
+- Nothing
+
+*** Quiz: The Trading Problem: Rewards
+
+Which results in faster convergence?
+
+r = daily return
+r = 0 until exit, then cumulative return
+
+r = daily return is correct
+
+A reward at each step allows the learning agent get feedback on each individual action it takes (including doing nothing).
+
+*** Quiz: The Trading Problem: State
+
+|----------------------+---+----------------------------------------------------------------|
+| Adjusted Close       |   | Not a good value because it is hard to generallize and compare |
+| SMA                  |   | Same reason as Adjusted close                                  |
+| Adjusted Close/SMA   | X | As a ratio is good                                             |
+| Bollinger Band value | X |                                                                |
+| P/E ratio            | X |                                                                |
+| Holding stock        | X | Good to know if you are holding it                             |
+| Return since entry   | X |                                                                |
+|----------------------+---+----------------------------------------------------------------|
 
