@@ -368,4 +368,18 @@ error decreases at the cost of slightly increasing in-sample error.
 After a certain point, the model becomes too general and starts
 performing worse on both training and test data.
 
-*** 
+-- 
+
+Overfitting happens earlier, lower k values
+
+*** Quiz: A few other considerations
+
+|------------------------+------------+-----|
+|                        | Linear Reg | KNN |
+|------------------------+------------+-----|
+| Space for saving model | -          |     |
+| Compute time to train  |            | -   |
+| Compute time to query  | -          |     |
+| Ease to add new data   |            | -   |
+|------------------------+------------+-----|
+
