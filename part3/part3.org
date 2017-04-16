@@ -420,4 +420,35 @@ biased by one approach.
 This typically results in less overfitting, and thus better
 predictions in the long run, especially on unseen data.
 
-*** 
+*** Bootstrap aggregating bagging
+
+Same learner but train different subsets of the data (bags of data)
+
+Collect/bag the data randomly
+
+Random with replacement means it is ok to grab the same data value again
+
+| n  | number of training instances in our original data |
+| n! | number of instances we put in each bag            |
+| m  | number of bags                                    |
+
+
+Rule of thumb
+
+Each bag is used to train a different model
+
+In the video (around 02:06), the professor mentions that n’ should be
+set to about 60% of n, the number of training instances. It is more
+accurate to say that in most implementations, n’ = n. Because the
+training data is sampled with replacement, about 60% of the instances
+in each bag are unique.
+
+
+*** Quiz: Overfitting
+
+A 1NN model (kNN with k = 1) matches the training data exactly, thus
+overfitting.
+
+An ensemble of such learners trained on slightly different datasets
+will at least be able to provide some generalization, and typically
+less out-of-sample error.
