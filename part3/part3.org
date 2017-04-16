@@ -173,3 +173,29 @@ Non-Parameteric
 You need to store the data and adding data is eadiy
 Training is fast but querying can be slow
 
+*** Training and Testing
+
+Features
+Different indicators
+Multiple features
+
+Prices, output are Y
+
+Training and Testing data need to be segmented apart
+
+Out of sample testing
+
+|----------+--------|
+| Features | Prices |
+|----------+--------|
+|          |        |
+| XTrain   | YTrain |
+|----------+--------|
+|          |        |
+| XTest    | YTest  |
+|----------+--------|
+
+
+Train on older data and test on new data
+
+
