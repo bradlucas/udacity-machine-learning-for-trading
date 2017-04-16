@@ -640,6 +640,32 @@ These q values can be used at each step to select the best action based on what 
 
 Guaranteed to provide an optimal policy
 
+- https://en.wikipedia.org/wiki/Q-learning
+
+*** What is Q?
+
+The Q function
+
+View as a table
+
+Q[s, a] = immediate reward + discounted reward
+
+
+How to use Q?
+
+PIE(s) = argmaxa(Q[s, a])
+
+         step through the table of Q[s, a] where a is the value
+         find the max value
+
+         in other words, find the a which maximizes Q[s, z])
+
+PIE*(s) = the star means optimal
+
+         Q*[s, a]
+
+
+
 
 
 
