@@ -497,5 +497,32 @@ Next,
 
 Reinforement learners create policies which provide specific direction on which action to take
 
+*** The RL problem
+
+Reinforcement learning is a problem not a solution and there are a number of solutions.
+
+Much like Linear Regression is a solution to the Supervised Learning Problem
+
+
+- https://en.wikipedia.org/wiki/Reinforcement_learning
+
+Robot example
+
+- Sense
+- Think
+- Act
+
+Reward. Take actions which maximimize the rewards
+
+         Environment
+         Learning
+
+State -> Policy(s)      -> Action
+         Lookup table  
+
+         Reward
+
+*** Quiz: Trading as an RL Problem
+
 
 
