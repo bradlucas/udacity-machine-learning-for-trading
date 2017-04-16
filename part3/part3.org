@@ -199,3 +199,26 @@ Out of sample testing
 Train on older data and test on new data
 
 
+*** Learning APIs
+
+For linear regression:
+
+learner = LinRegLearner()
+
+learner.train(Xtrain, Ytrain)
+
+y = learner.query(Xtest)
+
+These y values will be compared with Ytest values
+
+For KNN:
+
+learner = KNNLearner(k=3)
+
+learner.train(Xtrain, Ytrain)
+
+y = learner.query(Xtest)
+
+
+
+
