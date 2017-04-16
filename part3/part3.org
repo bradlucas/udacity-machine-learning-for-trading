@@ -582,9 +582,24 @@ Value/policy iterations
 
 Build model directly by looking at the data
 
+*** What to optimize?
+
+Infinite horizon
+- Sum of all reward of all steps
+
+Finite horizon
+- Limit the number of steps
+- Sum of reward for number of steps
 
 
+Discounted reward
+Gamma to i -1
+Steps devalue as you increase steps
+Think money over time. Interest rates
+Each step in the future is worth less
+Used in Q-Learning
 
 
+ 
 
 
