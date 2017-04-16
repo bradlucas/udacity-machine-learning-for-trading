@@ -640,7 +640,6 @@ E stands for error
 
 Sum(abs(eN)) or Sum(e^^2)
 
-
 ** Minimier finds coefficients
 
 Guess c0 = 1 and c1 = 0
@@ -650,7 +649,6 @@ Re-try with new c values
 Figure the errors
 
 Repeat until lowest errors values
-
 
 ** Works with polynomials
 - See 
