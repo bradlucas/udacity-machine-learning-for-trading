@@ -110,7 +110,6 @@ Text over the period - 2010 and 2011
 Generate orders.txt and push through your market simulator
 
 ** 03-02 - Regression
-
 *** Introduction
 Supervised Regresion Learnning
 
@@ -138,7 +137,6 @@ Data is used to build a model (formula)
 Data centric or Instance approach
 
 Look at the data for nearest data points to answer a query
-
 
 *** How to predict
 
@@ -198,7 +196,6 @@ Out of sample testing
 
 Train on older data and test on new data
 
-
 *** Learning APIs
 
 For linear regression:
@@ -218,7 +215,6 @@ learner = KNNLearner(k=3)
 learner.train(Xtrain, Ytrain)
 
 y = learner.query(Xtest)
-
 
 *** Example for linear regression
 
