@@ -297,5 +297,27 @@ RMSE = sqrt( sum( Ytest - Ypredict) ^ 2 / N )
 What is the out of sample?
 Find the error while using the Test set
 
-*** 
+*** Quiz : Which is worse
+
+You would expect out-of-sample error to be larger, since the model has not seen points from the test set.
+
+*** Cross validation
+
+|-------+-----|
+| Train | 60% |
+| Test  | 40% |
+|-------+-----|
+
+
+If not enough data
+Split into multiple training sets and a single test set. Say do multiple trials where you move the test segment around
+
+*** Roll forward cross validation
+
+If training data is after the test data then we have looked into the future
+
+Make sure the training data is always before the test data.
+
+Use smaller sets and roll forward for each trial
+
 
