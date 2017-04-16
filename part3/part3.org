@@ -599,7 +599,28 @@ Think money over time. Interest rates
 Each step in the future is worth less
 Used in Q-Learning
 
+*** Quiz: Which approach leads to 1M
 
- 
+Both a finite horizon of n = 10 as well as discounted rewards will
+result in the robot picking a path to the $1M cell.
 
+Infinite horizon may also lead to the robot choosing the $1M cell, but
+there isn't much difference mathematically since repeatedly visiting
+the $1 will also result in infinite reward.
+
+*** Summary
+
+RL summary
+
+- RL algos solve Markov Decision Problems
+- S, A, T[s, a, s!], R[s, a]
+- Find policy PIE(s) -> a which maximizes a reward
+- Map trading to RL
+
+|---+--------------------------|
+| S | Features/Holdings        |
+| A | Buy/sell/hold/do nothing |
+| R | Returns                  |
+| T | Market                   |
+|---+--------------------------|
 
