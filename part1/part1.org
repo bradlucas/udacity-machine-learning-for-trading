@@ -624,7 +624,7 @@ be hard for our minimizer.
 Functions with multiple minima, any discontinuities or zero slope will
 be hard for our minimizer.
 
-** Building a parameerized model
+** Building a parameterized model
 
 f(x) = mx + b
 
