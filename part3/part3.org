@@ -383,3 +383,12 @@ Overfitting happens earlier, lower k values
 | Ease to add new data   |            | -   |
 |------------------------+------------+-----|
 
+** 03-04 Ensemble learners, bagging and boosting
+*** Overview
+
+1988 - "Can a set of weak learners be combined to create a stronger learner?" Kearns and Valiant . 
+2006 - Netflix competition
+2009 - The winning algorithm was a combination of learners, an ensemble
+
+Ensemble learners
+
