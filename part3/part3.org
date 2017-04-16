@@ -259,4 +259,43 @@ If you plot results the line is ragged.
 Model can't extrapolate
 Horizontal lines before and after the data
 
+*** What happens as K varies
+
+K = 1 just goes from one value to another
+K = N just goes to the mean
+
+As K increases are we likely to overfit? No
+
+K=1 overfits
+
+*** What happens as D varies
+
+For a parameteric model
+D is the number of degrees
+
+The higher the number of polynomials (d) then the more likely to overfit.
+
+Yes, in this case, increasing d increases model complexity, and
+results in our model trying to closely align with the given data
+points.
+
+D = 1 is a linear model, results in a line
+D = 2 is a parabola 
+D = 3 has a cubed component
+
+
+*** Metric 1 RMS error
+
+Root Mean Squared error
+
+Error is the difference to the modeled line
+
+RMSE = sqrt( sum( Ytest - Ypredict) ^ 2 / N )
+
+*** In Sample vs Out of Sample
+
+What is the out of sample?
+Find the error while using the Test set
+
 *** 
+
