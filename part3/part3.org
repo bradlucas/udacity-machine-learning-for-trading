@@ -392,3 +392,32 @@ Overfitting happens earlier, lower k values
 
 Ensemble learners
 
+*** Ensemble learners
+
+KNN                            - https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
+LinReg                         - https://en.wikipedia.org/wiki/Simple_linear_regression
+Decision Tree                  - https://en.wikipedia.org/wiki/Decision_tree_learning
+Support Vector Machine (SVM)   - https://en.wikipedia.org/wiki/Support_vector_machine
+
+
+Take the mean of the answers of all the results
+
+
+Why?
+- less error
+- less overfitting
+
+
+Each has it's own bias so when you combine the biases are reduced
+
+*** Quiz: How to build an ensemble
+
+If we combine several models of different types (here parameterized
+polynomials and non-parameterized kNN models), we can avoid being
+biased by one approach.
+
+
+This typically results in less overfitting, and thus better
+predictions in the long run, especially on unseen data.
+
+*** 
