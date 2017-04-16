@@ -2,7 +2,6 @@
 - https://www.udacity.com/course/machine-learning-for-trading--ud501
 ** 03-01 - How Machine Learning is used at a hedge fund
 Building models
-
 *** The ML problem
 
 x -> Model -> y
@@ -54,7 +53,6 @@ This can be your training data
 X's can be muli-dimensional
 They are called factors
 
-
 *** Example at a fintech company
 
 Lucena Research
@@ -64,7 +62,6 @@ Lucena Research
 - Time period, stock universe
 - Train
   - Takes data and creates a model
-
 
 *** Price forcasting demo
 
@@ -112,7 +109,40 @@ Text over the period - 2010 and 2011
 
 Generate orders.txt and push through your market simulator
 
+** 03-02 - Regression
+
+*** Introduction
+Supervised Regresion Learnning
+
+Numerical Model
+
+*** Parametric Regression
+
+Building a model that is built with a number of parameters
+
+y = mx + b
+
+m and b are parameters
+
+linear regression, fitting data to a line
+
+Can fit a polynomial to better fit
+y = m2 * x^2 + mx + b
+
+Can add more terms. x^3, etc
+
+Data is used to build a model (formula)
+
+*** K nearest neighbor
+
+Data centric or Instance approach
+
+Look at the data for nearest data points to answer a query
 
 
+*** How to predict
 
+Since we are trying to predict y (rain) at given x (change in pressure), using the mean of nearest observed y values makes sens
+
+*** 
 
