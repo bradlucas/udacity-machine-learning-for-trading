@@ -535,6 +535,31 @@ State -> Policy(s)      -> Action
 | Daily Return      | X     |        | X      |   | 
 |-------------------+-------+--------+--------+---|
 
+*** Mapping trading to RL
+
+The policy we learn give the directions to change state to earn a reward
+
+Features/Holdings
+Actions Buy/Sell/Do nothing
+Reward/Profit
+
+*** Markov decision problem
+
+- Set of states (S)
+- Set of actions (A)
+- Transition function T[s, a, s!]
+  - Cells with probabilitys that s,a -> s!
+- Reward function R[s, a]
+
+- https://en.wikipedia.org/wiki/Markov_decision_process
+
+Find
+Policy PIE[s] wthat will maximize reward
+
+
+PIE* is the optimum policy
+
+
 
 
 
