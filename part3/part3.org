@@ -246,3 +246,17 @@ class LinRegLearner::
 - https://ashokharnal.wordpress.com/tag/k-nearest-neighbor-classification-example-using-python/
 - ...
 
+** 03-03 - Assessing a learning algorithm
+
+*** Overview
+
+There are many algorithms other than linear regression and knn
+
+*** A closer look at KNN solutions
+
+If you plot results the line is ragged.
+
+Model can't extrapolate
+Horizontal lines before and after the data
+
+*** 
