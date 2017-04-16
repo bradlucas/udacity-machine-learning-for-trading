@@ -617,10 +617,11 @@ RL summary
 - Find policy PIE(s) -> a which maximizes a reward
 - Map trading to RL
 
-|---+--------------------------|
-| S | Features/Holdings        |
-| A | Buy/sell/hold/do nothing |
-| R | Returns                  |
-| T | Market                   |
-|---+--------------------------|
-
+|---+-------------------------------------|
+| S | Features/Holdings                   |
+| A | Buy/sell/hold/do nothing            |
+| R | Returns                             |
+|---+-------------------------------------|
+| T | Market                              |
+|   | ML algorithms to produce PIE/Policy |
+|---+-------------------------------------|
