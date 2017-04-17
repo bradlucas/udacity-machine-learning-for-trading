@@ -870,4 +870,25 @@ init Tc[] = 0.00001
 while executing, observe s, a, s!
 increment Tc[s, a, s!]
 
-*** 
+*** Quiz: How to evaluate T?
+
+Type in your expression using MathQuill - a WYSIWYG math renderer that understands LaTeX.
+
+E.g.:
+
+to enter Tc, type: T_c
+to enter Σ, type: \Sigma
+For entering a fraction, simply type / and MathQuill will automatically format it. Try it out!
+
+Correction: The expression should be:
+
+Computing transition probabilities using counts In the denominator
+shown in the video, T is missing the subscript c.
+
+
+T[s, a, s!] = \frac{T_c [s,a,s']}{\Sigma_i T_c [s,a,i]}
+
+
+You simply need to normalize the observed count Tc[s,a,s'] of landing
+in next state s' by the total count of all transitions from state s on
+action a, i.e. summed over all possible next states.
