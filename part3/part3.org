@@ -805,3 +805,27 @@ Advantages
 - The biggest challenge is that the reward (e.g. for buying a stock) often comes in the future - representing that properly requires look-ahead and careful weighting.
 - Another problem is that taking random actions (such as trades) just to learn a good strategy is not really feasible (you'll end up losing a lot of money!).
 - In the next lesson, we will discuss an algorithm that tries to address this second problem by simulating the effect of actions based on historical data.
+
+*** Resources
+
+CS7641 Machine Learning, taught by Charles Isbell and Michael Littman
+    
+
+Watch for free on Udacity (mini-course 3, lessons RL 1 - 4)
+    - https://classroom.udacity.com/courses/ud262
+
+Watch for free on YouTube
+    - https://www.youtube.com/watch?v=_ocNerSvh5Y&list=PLAwxTw4SYaPnidDwo9e2c7ixIsu_pdSNp
+
+Or take the course as part of the OMSCS program!
+    - http://www.omscs.gatech.edu/cs-7641-machine-learning/
+
+RL course by David Silver (videos, slides)
+    - http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html
+
+A Painless Q-Learning Tutorial
+    - http://mnemstudio.org/path-finding-q-learning-tutorial.htm
+
+
+
+** 03-07 
