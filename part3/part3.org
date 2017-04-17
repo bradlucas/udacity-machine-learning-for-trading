@@ -892,3 +892,23 @@ T[s, a, s!] = \frac{T_c [s,a,s']}{\Sigma_i T_c [s,a,i]}
 You simply need to normalize the observed count Tc[s,a,s'] of landing
 in next state s' by the total count of all transitions from state s on
 action a, i.e. summed over all possible next states.
+
+*** Learning R
+
+R[s, a] => expeced reward for s, a
+
+r => immediate reward in the real world
+
+
+Alpha is the learning rate. Say 0.2
+
+R![s, a] = (1 - Alpha) R[s, a] + Alpha * r
+
+
+*** Dyna Q Recap
+
+Q -> Update model -> Hallucinate -> Q update
+
+
+
+
