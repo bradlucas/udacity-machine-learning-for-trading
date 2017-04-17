@@ -826,6 +826,39 @@ RL course by David Silver (videos, slides)
 A Painless Q-Learning Tutorial
     - http://mnemstudio.org/path-finding-q-learning-tutorial.htm
 
+** 03-07 - Dyna
+*** Overview
+
+Take many experience tuples to conververge
+Expensive because you need to take many steps (trades) to learn from
 
 
-** 03-07 
+Rich Sutton, Dyna
+After each real iteraction, hallucinate other interactions
+
+- https://en.wikipedia.org/wiki/Richard_S._Sutton
+- https://medium.com/syncedreview/interview-with-dr-richard-sutton-we-might-have-strong-ai-algorithms-by-2030-a1052332d878
+- http://dl.acm.org/citation.cfm?id=122377
+
+*** Dyna-Q Big Picture
+
+Q-learning
+Model free
+Doesn't rely on T or R
+
+Dyna is a blend. An addition to Q-Learning
+
+Q-Learn (expensive)
+- Init Q table
+- Observe S
+- Execute A, ObserveS; R
+- Update Q with <a, a, s!, r>
+
+
+Dyna-Q (cheap)
+- Learn model T R
+
+- Halucinate experience
+
+- Update Q
+
