@@ -782,4 +782,18 @@ Convert a real number into an integer in a limited range
 - for i in range(0, steps)
    threshold[i] = data[ (i+1) * stepsize)
 
+*** Q-Learning Recap
+
+Building a model
+
+- define states, actionx, rewards
+- choose in-sample training period
+- iterate: Q-table update
+- backtest
+
+
+Testing a model
+- backtest on later data
+
+
 
