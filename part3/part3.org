@@ -862,3 +862,12 @@ Dyna-Q (cheap)
 
 - Update Q
 
+*** Learning T
+
+T[s, a, s!] prob s, a => s!
+
+init Tc[] = 0.00001
+while executing, observe s, a, s!
+increment Tc[s, a, s!]
+
+*** 
