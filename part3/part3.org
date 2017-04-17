@@ -759,7 +759,6 @@ A reward at each step allows the learning agent get feedback on each individual 
   - Assuming a descrite state space
 
 
-- https://en.wikipedia.org/wiki/Discretization
 
 |----+------+------------+----+---+---+---+---+---|
 | X1 | 25.6 | discretize | -> | 0 |   |   |   |   |
@@ -769,5 +768,18 @@ A reward at each step allows the learning agent get feedback on each individual 
 |    |      |            |    |   |   |   |   |   |
 |    |      |            |    |   | 2 | 9 | 5 | 0 |
 |----+------+------------+----+---+---+---+---+---|
+
+*** Discretizing
+
+Discretization
+- https://en.wikipedia.org/wiki/Discretization
+
+
+Convert a real number into an integer in a limited range
+
+- stepsize = size(data)/steps
+- data.sort()
+- for i in range(0, steps)
+   threshold[i] = data[ (i+1) * stepsize)
 
 
