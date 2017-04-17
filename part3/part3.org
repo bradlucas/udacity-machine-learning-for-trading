@@ -909,6 +909,42 @@ R![s, a] = (1 - Alpha) R[s, a] + Alpha * r
 
 Q -> Update model -> Hallucinate -> Q update
 
+*** Summary
 
+The Dyna architecture consists of a combination of:
+
+- direct reinforcement learning from real experience tuples gathered by acting in an environment,
+- updating an internal model of the environment, and,
+- using the model to simulate experiences.
+
+
+Dyna learning architecture
+https://s3.amazonaws.com/content.udacity-data.com/courses/ud501/images/Dyna-architecture.png
+
+Sutton and Barto. Reinforcement Learning: An Introduction. MIT Press, Cambridge, MA, 1998. [web]
+[https://webdocs.cs.ualberta.ca/~sutton/book/the-book.html]
+
+
+- http://matt.colorado.edu/teaching/RL/
+- https://news.ycombinator.com/item?id=12568414
+- https://cdn.preterhuman.net/texts/science_and_technology/artificial_intelligence/Reinforcement%20Learning%20%20An%20Introduction%20-%20Richard%20S.%20Sutton%20,%20Andrew%20G.%20Barto.pdf
+
+
+- Book
+- https://webdocs.cs.ualberta.ca/~sutton/book/the-book.html
+- http://web.archive.org/web/20161228183910/http://webdocs.cs.ualberta.ca/~sutton/book/the-book-1st.html
+- http://web.archive.org/web/20161229060409/https://webdocs.cs.ualberta.ca/~sutton/book/ebook/the-book.html
+
+
+- Code
+- https://webdocs.cs.ualberta.ca/~sutton/book/code/code.html
+- http://web.archive.org/web/20160701192651/https://webdocs.cs.ualberta.ca/~sutton/book/code/code.html
+
+- Reviews
+- http://robots.stanford.edu/papers/thrun.rl-book-review.pdf
+- https://static.vtc.vt.edu/media/documents/MontagueReviewTICS1999.pdf
+
+- 2nd Edition
+- http://people.inf.elte.hu/lorincz/Files/RL_2006/SuttonBook.pdf
 
 
