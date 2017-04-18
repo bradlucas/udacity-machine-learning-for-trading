@@ -1,4 +1,4 @@
-* PART 3
+ * PART 3
 - https://www.udacity.com/course/machine-learning-for-trading--ud501
 ** 03-01 - How Machine Learning is used at a hedge fund
 Building models
@@ -63,7 +63,7 @@ Lucena Research
 - Train
   - Takes data and creates a model
 
-*** Price forcasting demo
+*** Price forecasting demo
 
 QuantDesk
 Cloud-based application created by Lucena Research
@@ -86,19 +86,19 @@ and see how the system performs predicting the next data
 
 Example from QuantDesk
 
-*** Problems with regresssion
+*** Problems with regression
 
-Regression based forecasing can be useful
+Regression based forecasting can be useful
 
-Thoughs issues:
+Though there are issues:
 
-- Nosiy and uncertain
+- Noisy and uncertain
 - Challenging to estimate confidence
 - Holding time, allocation. How to decide
 
 
 Another idea:
-Policy learning / Reenforcement Learning
+Policy learning / Re-enforcement Learning
 more later on this
 
 *** Problem we will focus on
@@ -111,7 +111,7 @@ Generate orders.txt and push through your market simulator
 
 ** 03-02 - Regression
 *** Introduction
-Supervised Regresion Learnning
+Supervised Regression Learning
 
 Numerical Model
 
@@ -162,13 +162,13 @@ Yes, the cannon ball distance can be best estimated using a parametric model, as
 
 On the other hand, the behavior of honey bees can be hard to model mathematically. Therefore, a non-parametric approach would be more suitable.
 
-If you can quess at an equation a parametric model might work. If you don't or the data doesn't appear to be equation based, try a non-parametric
+If you can guess at an equation a parametric model might work. If you don't or the data doesn't appear to be equation based, try a non-parametric
 
-Parameteric doesn't have to store the data but you need it to re-train or add data.
+Parametric doesn't have to store the data but you need it to re-train or add data.
 Training is slow, query is fast
 
-Non-Parameteric
-You need to store the data and adding data is eadiy
+Non-Parametric
+You need to store the data and adding data requires more storage
 Training is fast but querying can be slow
 
 *** Training and Testing
@@ -263,16 +263,16 @@ Horizontal lines before and after the data
 K = 1 just goes from one value to another
 K = N just goes to the mean
 
-As K increases are we likely to overfit? No
+As K increases are we likely to over fit? No
 
 K=1 overfits
 
 *** What happens as D varies
 
-For a parameteric model
+For a parametric model
 D is the number of degrees
 
-The higher the number of polynomials (d) then the more likely to overfit.
+The higher the number of polynomials (d) then the more likely to over fit.
 
 Yes, in this case, increasing d increases model complexity, and
 results in our model trying to closely align with the given data
@@ -335,7 +335,7 @@ numpy.corrcoef()
 
 As RMS error increases, correlation goes down.
 
-*** Overfitting
+*** Over fitting
 
 Degrees of freedom (d) (degrees of the polynomial)
 
@@ -346,11 +346,11 @@ Done with Training data results in what is called 'in sample error'
 
 
 If you plot the out of sample error it will decrease but will curve up
-Where it curves/diverges is overfitting
+Where it curves/diverges is over fitting
 - in sample is decreasing
 - out of sample is increasing
 
-*** Quiz: KNN overfitting
+*** Quiz: KNN over fitting
 
 K from 1 to N
 
@@ -370,7 +370,7 @@ performing worse on both training and test data.
 
 --
 
-Overfitting happens earlier, lower k values
+Over fitting happens earlier, lower k values
 
 *** Quiz: A few other considerations
 
@@ -405,7 +405,7 @@ Take the mean of the answers of all the results
 
 Why?
 - less error
-- less overfitting
+- less over fitting
 
 
 Each has it's own bias so when you combine the biases are reduced
@@ -426,7 +426,7 @@ Same learner but train different subsets of the data (bags of data)
 
 Collect/bag the data randomly
 
-Random with replacement means it is ok to grab the same data value again
+Random with replacement means it is OK to grab the same data value again
 
 | n  | number of training instances in our original data |
 | n! | number of instances we put in each bag            |
@@ -463,7 +463,7 @@ AdaBoost (Adaptive Boost)
 
 Use the training data after building the model to test the model
 
-Build the next bag of data using the test results to weigh the choosen data according the errors found during the test run
+Build the next bag of data using the test results to weigh the chosen data according the errors found during the test run
 
 Now, test both bags, combine outputs to build a new bag
 
@@ -482,20 +482,20 @@ Thus, compared to simple bagging, it may result in more overfitting.
 *** Summary
 
 Boosting and bagging
-- Wrappers for exisitng methods
+- Wrappers for existing methods
 - Hidden inside the same API. Callers don't need to know
 - Reduces error
 - Reduces overfitage
 ** 03-05 - Reinforcement learning
 *** Overview
 
-Up until this point we've focused forcast price changes and we buy the stocks with the most predicited price change.
+Up until this point we've focused forecast price changes and we buy the stocks with the most predicted price change.
 
 This ignores the certainty of the price change and it doesn't help us know when to exit the position
 
 Next,
 
-Reinforement learners create policies which provide specific direction on which action to take
+Reinforcement learners create policies which provide specific direction on which action to take
 
 *** The RL problem
 
@@ -512,7 +512,7 @@ Robot example
 - Think
 - Act
 
-Reward. Take actions which maximimize the rewards
+Reward. Take actions which maximize the rewards
 
          Environment
          Learning
@@ -548,13 +548,13 @@ Reward/Profit
 - Set of states (S)
 - Set of actions (A)
 - Transition function T[s, a, s!]
-  - Cells with probabilitys that s,a -> s!
+  - Cells with probabilities that s,a -> s!
 - Reward function R[s, a]
 
 - https://en.wikipedia.org/wiki/Markov_decision_process
 
 Find
-Policy PIE[s] wthat will maximize reward
+Policy PIE[s] what will maximize reward
 
 
 PIE* is the optimum policy
@@ -563,7 +563,7 @@ PIE* is the optimum policy
 
 We don't have the PIE environment/function nor the Reward function
 
-Experience tuble
+Experience tuple
 <s1 a1 s1! r1>
 <s2 a2 s2! r2>
 .
@@ -572,7 +572,7 @@ Experience tuble
 <sn an sn! rn>
 
 
-**** Model based reinforcment learning
+**** Model based reinforcement learning
 
 Build T[a, a, s!] and R[s, a] from our list of experiences. Easy. Table-based.
 
@@ -670,7 +670,7 @@ Big picture
 - select training data
 - iterate over time <s, a, s:r>
 - test policy PIE
-- repeat until converg
+- repeat until converge
 
 Details
 - set starttime, init Q[]
@@ -692,11 +692,11 @@ Lower Alpha, slowing learning
 Gamma is the discount rate 0 to 1.0
     - low value means we value later values less
 
-Q![s, a] = (1 - Alpha) Q[s, a] + Alpha (r + Gamaa later rewards)
+Q![s, a] = (1 - Alpha) Q[s, a] + Alpha (r + Gamma later rewards)
 
 
                                            - future discounted rewards
-Q![s, a] = (1 - Alpha) Q[s, a] + Alpha (r + Gamaa * Q[s!, argmaxa (Q[s!, a!])])
+Q![s, a] = (1 - Alpha) Q[s, a] + Alpha (r + Gamay * Q[s!, argmaxa (Q[s!, a!])])
 
 *** Update rule - notes
 
@@ -740,7 +740,7 @@ A reward at each step allows the learning agent get feedback on each individual 
 *** Quiz: The Trading Problem: State
 
 |----------------------+---+----------------------------------------------------------------|
-| Adjusted Close       |   | Not a good value because it is hard to generallize and compare |
+| Adjusted Close       |   | Not a good value because it is hard to generalize and compare |
 | SMA                  |   | Same reason as Adjusted close                                  |
 | Adjusted Close/SMA   | X | As a ratio is good                                             |
 | Bollinger Band value | X |                                                                |
@@ -755,7 +755,7 @@ A reward at each step allows the learning agent get feedback on each individual 
 - Discretize each factor
   - Convert a real number into an integer
 - Combine
-  - Assuming a descrite state space
+  - Assuming a discrete state space
 
 
 
@@ -829,12 +829,12 @@ A Painless Q-Learning Tutorial
 ** 03-07 - Dyna
 *** Overview
 
-Take many experience tuples to conververge
+Take many experience tuples to converge
 Expensive because you need to take many steps (trades) to learn from
 
 
 Rich Sutton, Dyna
-After each real iteraction, hallucinate other interactions
+After each real iteration, hallucinate other interactions
 
 - https://en.wikipedia.org/wiki/Richard_S._Sutton
 - https://medium.com/syncedreview/interview-with-dr-richard-sutton-we-might-have-strong-ai-algorithms-by-2030-a1052332d878
@@ -858,7 +858,7 @@ Q-Learn (expensive)
 Dyna-Q (cheap)
 - Learn model T R
 
-- Halucinate experience
+- Hallucinate experience
 
 - Update Q
 
