@@ -40,7 +40,7 @@ Projects:
   - No disclosure
   - Not transparent
 
-** Liquidity and capitalizatio
+** Liquidity and capitalization
 
 Liquid
 How easy you can buy and sell
@@ -127,10 +127,10 @@ Metrics
 
 
 The Trading Algorithm tries to get Live Portfolio to match a Target portfolio
-You don't want to excute every thing at once else you might move the market against yourself
+You don't want to execute every thing at once else you might move the market against yourself
 
 
-Computing the Target Portolio
+Computing the Target Portfolio
 
 |-----------------------+---+---------------------+---+------------------|
 | N-day forcast         |   |                     |   |                  |
@@ -147,7 +147,7 @@ Computing the Target Portolio
 |                       |   | Risk constraints    |   |                  |
 |-----------------------+---+---------------------+---+------------------|
 
-The forcast is generated possiblity with Machine Learning
+The forecast is generated possibility with Machine Learning
 
 |-----------------------+----------------------+---+---------------|
 | Information Feed      |                      |   |               |
@@ -160,7 +160,7 @@ The forcast is generated possiblity with Machine Learning
 |-----------------------+----------------------+---+---------------|
 
 
-Forcasting Algorithm is typically a model. Possibly using Machine Learning
+Forecasting Algorithm is typically a model. Possibly using Machine Learning
 
 * 02-02 - Market Mechanics
 ** What is in an order?
@@ -188,7 +188,7 @@ The Order book
 BID == Buyer
 ASK == Seller
 
-ORDEr
+ORDER
 BUY,IBM,100,LIMIT,99.95
 SELL,IBM,1000,LIMIT,100
 
@@ -199,12 +199,12 @@ BUY,IBM,100,MARKET
 Exploiting market mechanics
 
 Order book exploit
-Colocate next to exchange and view the exchange's order book before remote buyers and sellers
+Co-locate next to exchange and view the exchange's order book before remote buyers and sellers
 Acting before orders that arrive later
 
 Geographic Arbitrage Exploit
-Exhanges are located far apart (NYSE and London)
-Colocated in both exchanges with ultra-high speed connection between
+Exchanges are located far apart (NYSE and London)
+Co-located in both exchanges with ultra-high speed connection between
 Notice differences between the exchanges
 
 ** Additional Order Types
@@ -248,12 +248,12 @@ You have to pay more to give back the shares. You lose that difference.
 ** Why company  value matters
 
 Value goes up over time (assumption)
-Stock mark price oscollates around this value
+Stock mark price oscillates around this value
  - If the price is higher than the value. sell
  - Buy if the price is below the value
 
 
-- Intrisic value
+- Intrinsic value
   - Future dividends
   - How much will you get for ownership in the future
 
@@ -271,7 +271,7 @@ How much will the dollar worth in the future
 
 ** The value of a future dollar
 
-Present Value = Future Value / (1 + Inerest Rate) ^ i
+Present Value = Future Value / (1 + Interest Rate) ^ i
 
 i = number of years
 
@@ -293,7 +293,7 @@ i is 0 to the Present Value is the Same as the Future Value
 ** Intrinsic Value
 
 The interest is related to the risk of the company.
-For example, the Balch Bond needed to raise it rate to attrach you over the Government bond
+For example, the Balch Bond needed to raise it's rate to attract you over the Government bond
 
 The Discount Rate is higher if you think the company is risky
 
@@ -335,7 +335,7 @@ Discount Rate = 4%
 Intangible - brand, patent, etc
 
 
-Total assets (fixed and intangile) - intangible assets - liabilites
+Total assets (fixed and intangible) - intangible assets - liabilities
 
 ** Market Capitalization
 
@@ -362,25 +362,25 @@ $1M dividends/year with 5% DR
 FV/DR = 1M/.05 = 20,000,000 = 20M
 20,000,000
 
-Market VAlue
+Market Value
 1M shares outstanding
 $75 stock
 1M * 75 = 75M
 75,000,000
 
 ** Summary
-Instrinsic Value
+Intrinsic Value
 - Future value of dividends
 Book value
 - Value of pieces
 Market Cap
 - Market's opinion of value
 
-Strategies look for differences between the Book Value or Instrinsic Value and the Market Cap
+Strategies look for differences between the Book Value or Intrinsic Value and the Market Cap
 
 - If Intrinsic value drops while Market cap stays high it might be signal to short
 - If Dividends are going up and Market cap is low it might be signal to buy
-- Book value provides a lowest price. When Market Cap approaches the book value it is unllikely to drop
+- Book value provides a lowest price. When Market Cap approaches the book value it is unlikely to drop
   - if the market cap drops below book value it might be a signal to buy
 
 * 02-04 - The Capital Asset Pricing Model
@@ -508,7 +508,7 @@ Only way to beat the market is to choose Beta
 High Beta in up markets
 Low Beta in down markets
 
-Efficient Markets Hypothesis (EMH) says you can't redict the market
+Efficient Markets Hypothesis (EMH) says you can't predict the market
 
 Which means you can beat the market
 
@@ -530,7 +530,7 @@ they are looking for stocks which will go up more then the market when
 the market goes up and ones that go down more than the market when the
 market goes down.
 
-** Two stock screnario
+** Two stock scenario
 
 Predict long 1% and short 1%
 With a market return of 0% we get
@@ -674,7 +674,7 @@ Rp = 0 + WaAa + WbAb
 Rp = .66*1% + -.33*-1
 Rp = 1.0%
 
-No guarentees on Betas continuing but still we've reduced market exposure
+No guarantees on Betas continuing but still we've reduced market exposure
 
 ** CAPM for hedge funds summary
 
@@ -691,14 +691,14 @@ by finding the appropriate weights to accomplish this
 Fundamental - Aspects of company to value the company. Look for price less than value
 Technical - Don't care about the value. Look for patterns or trends in a stocks price.
 
-** Characterstics of Technical Analysis
+** Characteristics of Technical Analysis
 
 - Historical price and volume only
-- Comput statistics called indicators
+- Compute statistics called indicators
 - Indicators are heuristics
 
 Some think:
-Tehnical is more a trading approach than an investing approach
+Technical is more a trading approach than an investing approach
 
 Why it might work
 - There is information in the price
@@ -731,16 +731,16 @@ Technical is more appropriate for shorter periods
 Decision complexity increase for longer periods
 Decision speed is faster for shorter time periods
 
-High frequence trading. Fast, short decision, technical
+High frequency trading. Fast, short decision, technical
 
 
-Human. Longer periods. Insite driven
+Human. Longer periods. Insight driven
 
-** Indictator - Momentum
+** Indicator - Momentum
 
 - Change in price over time
 - Positive or negative
-- Strenth is the slope of the line (change in price over time)
+- Strength is the slope of the line (change in price over time)
 
 - Visually
 - Draw line between two price points for a given time period
@@ -765,9 +765,9 @@ Two ways to use:
   - Combine with strong momentum may be a signal
 
 - Proxy for underlying value
-   - If the price has a strong divergance from the SMA. May have an arbitrage opportunity
+   - If the price has a strong divergence from the SMA. May have an arbitrage opportunity
 
-- Quantitatve
+- Quantitative
 - Percent diff from price
 
 SMA[t] = ( price[t] / price[t-n:t].mean() ) - 1
@@ -776,14 +776,14 @@ Typical range : -.50 to +.50
 
 ** Bollinger Bands
 
-Low volitity use smaller excursion
-High volotility use wider excurions
+Low Volatility use smaller excursion
+High volatility use wider excursions
 
 Use standard deviation
-Say 2 degress
+Say 2 degrees
 
 How to use
-Lookg for cross from outside to the inside
+Looking for cross from outside to the inside
 
 
 BB[t] = (price[t] - SMA[t]) / 2 * std[t]
@@ -794,7 +794,7 @@ Typical Range: -1.0 to 1.0
 
 - Excursion returning back through the bands are signals
 
-- Excurions out of the band are not a signal
+- Excursions out of the band are not a signal
 
 ** Normalization
 
@@ -814,7 +814,7 @@ Normed = (Values - Mean) / Values.std()
 
 ** Wrap Up
 
-- Heruristics
+- Heuristics
 - Tucker's approach
   - There are other people's approach
 - Don't start trading yet
@@ -866,7 +866,7 @@ Value of the company doesn't change. The number of shares changes
 To account for the splits
 Adjusted close or adjusted prices
 
-Create a timeline of data working backwards
+Create a time line of data working backwards
 When you get to a split
     - Say a 2:1 price
     - Continue back and divide the price by 2
@@ -890,7 +890,7 @@ On the day of the dividend the price will fall to 100 because you'll get the 1.0
 Strong price when the dividend pays out
 
 Go back in time actual matches
-When you get to a split you adjust the price the amount of the dividend (in precent)
+When you get to a split you adjust the price the amount of the dividend (in recent)
 
 Data will have both Actual and Adjusted
 Assume for this course we are using Adjusted
@@ -904,13 +904,13 @@ A biased strategy if you use today's stocks. Those that didn't survive are not i
 
 If you use a list of stocks from the past some may not have survived and won't exist at the end of your range.
 
-If you plot the results bewtween the two approaches and note the difference, this is the bias
+If you plot the results between the two approaches and note the difference, this is the bias
 
 Use survivor bias free data
 Not usually free.
 You won't have that false hope generated by having
 
-In finance, survivorship bias is the tendency for failed companies to
+In finance, survivor-ship bias is the tendency for failed companies to
 be excluded from performance studies because they no longer exist. It
 often causes the results of studies to skew higher because only
 companies which were successful enough to survive until the end of the
@@ -963,8 +963,8 @@ Some Hedge Funds prove that it isn't
 
 We've seen people make money from insider information (strong)
 
-* 02-09 - The Fundamental Law of active portfolio managment
-** Grinaold's Fundamental Law
+* 02-09 - The Fundamental Law of active portfolio management
+** Grinold's Fundamental Law
 - Performance
 - Skill
 - Breadth
@@ -972,7 +972,7 @@ We've seen people make money from insider information (strong)
 
 performance = skill * sqrt(breadth)
 
-Information Ratio (IR) = Information Coeeficient IC * Sqrt (Breadth)
+Information Ratio (IR) = Information Coefficient IC * Sqrt (Breadth)
 
 Breadth is the number of trading opportunities
 
@@ -1003,7 +1003,7 @@ Expected return
 
 - Single bet (Bet 1000 chips at once)
 
-Notice -1000 (negative) for .49 percent chance of lossing
+Notice -1000 (negative) for .49 percent chance of losing
 .51 * 1000 + .49 * -1000 =
 510 - 490 = 20
 
@@ -1042,7 +1042,7 @@ stdev(-1000, 0, 0, 0, 0, ..., 0) = 31.62
 
 Key point the standard deviation or risk is much larger when we take a single bet
 
-** Coin flip casino: Reward/isk
+** Coin flip casino: Reward/risk
 Just like Sharpe Ratio
 
 - Single bet case
@@ -1064,7 +1064,7 @@ Taking potential risk into account makes such a difference, doesn't it?
 
 ** Coin flip casino observation
 
-Single 1000 token bet has a Sharpe rati0oof .63
+Single 1000 token bet has a Sharpe ratio of .63
 
 Multiple 1000 token bets has a Sharpe ratio of 20
 
@@ -1075,7 +1075,7 @@ SRsingle = .63
 
 SRmulti = SRsingle * sqrt(bets)
 
-Perfformance = Skill * sqrt(breadth)
+Performance = Skill * sqrt(breadth)
 
 ** Coin flip Casino: Lessons
 
@@ -1092,23 +1092,23 @@ Risk and Reward
 | Buffet  | holds 120 stocks |
 |---------+------------------|
 
-These firms have similar performacd
+These firms have similar performance
 
 Fundamental law of active portfolio management
 
 ** IR, IC, Breadth
 
-*** Information Raio
+*** Information Ratio
 
 Rp = BbRm + Ai
    = Market + Skill
    = BpRm + Ap
 
-What is the Sharpe ratio of the skill compomnent?
+What is the Sharpe ratio of the skill component?
 
 IR = Ap = mean(Ap) / Stdev(Ap)
 
-Essentially like Sharpe ratio of execess return
+Essentially like Sharpe ratio of excess return
 
 Measurement of manager performance
 
@@ -1117,7 +1117,7 @@ Measurement of manager performance
 Correlation of forecasts to returns
 
 0 = no correlation
-1 = strongly corrlated
+1 = strongly correlated
 
 *** BR - Breadth
 
@@ -1156,9 +1156,9 @@ Breadth = (1000 * sqrt(120)) ^ 2
 * 02-10 - Portfolio optimization and the efficient frontier
 
 Given a set of equities that you think are a good investment
-How much of your portoflio should you invest in each stock
+How much of your portfolio should you invest in each stock
 
-On appropach is:
+On approach is:
 Mean variance optimization or portfolio optimization
 
 Given:
@@ -1173,7 +1173,7 @@ Volatility is the standard deviation of historical daily returns
 
 (there are other methods to measure risk)
 
-** Vsualizing returns vs risk
+** Visualizing returns vs risk
 
 Returns on the y axis and risk on the x axis
 Scatter plot
@@ -1191,14 +1191,14 @@ Old days, build a portfolio manually with equal weights or by focusing in differ
 Better? Can you build a portfolio with lower risk than any of the equities
 
 Harry Markowitz
-Relationship between stocks due to covariance
+Relationship between stocks due to co-variance
 
-** Why covariance matters
+** Why co-variance matters
 
 Look at two stocks
 Note how some move together and some move apart (opposite) though they may have similar overall returns
 
-Covariance of daily returns which is the smae as the correalation coefficent of daily returns
+Co-variance of daily returns which is the same as the correlation coefficient of daily returns
 
 Positive = move together
 Negative = move opposite
@@ -1211,7 +1211,7 @@ If you blend anti-correlated values you'll reduce volatility
 Inputs:
 - Expected return
 - Volatility
-- Covariance
+- Co-variance
 - Target return
 
 Output
@@ -1219,7 +1219,7 @@ Output
 
 ** The Efficient Frontier
 
-If you compute for all potential returns from the minimial return to the maximum
+If you compute for all potential returns from the minimal return to the maximum
 You get a curve
 This is the efficient frontier
 
