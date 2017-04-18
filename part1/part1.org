@@ -48,7 +48,7 @@ Date the first column with date moving down and up through time. Date ascending
 
 Rows contain the data values. NaN is not a number (Python's name for null)
 
-Three dimensional. Stcked cards where each has a different data value
+Three dimensional. Stacked cards where each has a different data value
 Close, Volume, AdjClose etc
 
 ** Reading a CSV
@@ -317,7 +317,7 @@ Rolling standard deviation
 
 ** Bollinger Bands
 
-Look at the recent violtility of the stock
+Look at the recent volatility of the stock
 
 2 standard deviations above and below the rolling mean
 
@@ -391,18 +391,18 @@ Daily Ret vs Time
 
 ** Histogram
 
-Occurrances into buckets
+Occurrences into buckets
 
-Histogram of stockmarket over long period of time looks like a bell curve. Gaussian or normal distribution
+Histogram of stock market over long period of time looks like a bell curve. Gaussian or normal distribution
 
 
 - Mean
-- Standard Deviation (variace from mean)
+- Standard Deviation (variance from mean)
 - Kurtosis
   - tails
-  - how much your chart differs from 'nomal gaussian' distribution
-  - fat tails (positive), more occurances in tails
-  - negative kurtosis, few occurances
+  - how much your chart differs from 'normal Gaussian' distribution
+  - fat tails (positive), more occurrences in tails
+  - negative kurtosis, few occurrences
     
 
 
@@ -420,13 +420,13 @@ Linear regression to fit a line to the scatter plot
   - Higher number
     - The stock moves more than the market
 
-- Intercept vertica axis
+- Intercept vertical axis
   - Alpha
     - If positive returns more than the market
 
 ** Slope is not correlation
 
-- Correlation is a meaure how tightly the points fit the line
+- Correlation is a measure how tightly the points fit the line
   - Thinner cloud is tighter
 
   - 0 is not correlated at all
@@ -435,7 +435,7 @@ Linear regression to fit a line to the scatter plot
 ** Real world
 
 Daily returns for stocks and the market look like a Gaussian
-If they where really Guassian we'd say they were normally distributed
+If they where really Gaussian we'd say they were normally distributed
   
 This is dangerous be it ignores kurtosis, or the probability in the tails
 
@@ -451,7 +451,7 @@ allocs = [04, 0.4, 0.1, 0.1]
 - Prices
   - prices
 
-- Normalizd proces
+- Normalized process
   - Normalize to the first day
   - normalized = prices/prices[0]
   - Prices will all start at 1.0
@@ -472,7 +472,7 @@ allocs = [04, 0.4, 0.1, 0.1]
 ** Daily returns
 
 - First value is zero
-- Exclude that value from calculations on dataily _returns
+- Exclude that value from calculations on daily_returns
 
 daily_rets = daily_rets[1:]
 
@@ -484,7 +484,7 @@ daily_rets = daily_rets[1:]
   - Average (mean) of each daily return
 - Standard Deviation of Daily Return
   - Standard deviation of each of the daily runs
-    - Risk or volitility
+    - Risk or volatility
 - Sharpe Ratio
   - Risk adjusted return
 
@@ -532,7 +532,7 @@ What is the rate per day
 daily_rf = 252nd root of 1.0. + 0.1 - 1 = daily risk free root
 
 
-daily_rf does fluctate but in effect it is constant. With that the std
+daily_rf does fluctuate but in effect it is constant. With that the std
 of a number minus a constant is the same as the std of the number.
 
 
@@ -571,7 +571,7 @@ where k = sqrt(252) for daily sampling.
 
 = sqrt(252) * mean(0.001 - 0.0002) / std(.001)
 
-** Assigment
+** Assignment
 
 Write a function to calculate the following for a portfolio:
 
@@ -582,7 +582,7 @@ Write a function to calculate the following for a portfolio:
 
 * 01-08 - Optimizers: Building a parameterized model
 ** What is an optimizer?
-Algorith that can do:
+Algorithm that can do:
 
 - Find minimum values for functions
   - f(x) - x^2 + x^3 + 5
@@ -659,13 +659,13 @@ Repeat until lowest errors values
 
 Final Assignment: Build a portfolio optimizer
 
-Fiven a set of assets and time period find a allocation of funds to assets that maximizes performance
+Given a set of assets and time period find a allocation of funds to assets that maximizes performance
 
 What is performance?
 
-Cumulative return   - Maximimize Return
-Volitity or risk    - Minimize Risk 
-Risk adjuted return (Sharpe Ratio) - Maximize Sharpe Ratio
+Cumulative return   - Maximize Return
+Volatility or risk    - Minimize Risk 
+Risk adjusted return (Sharpe Ratio) - Maximize Sharpe Ratio
 
 See:
 - http://quantsoftware.gatech.edu/CS7646_Spring_2017#Assignments
@@ -697,7 +697,7 @@ Optimize for Sharpe Ratio
 
 Graph Portfolio vs SPY
 
-** Framing the proglem
+** Framing the problem
 
 - Provide a function to minimize f(x)
 - provide an initial guess for X
@@ -707,7 +707,7 @@ X == allocations
 
 We want the largest the Sharpe Ratio.
 So, the function f is the -1 * the Sharpe Ratio.
-We multiple by -1 to get the maximum. If we didn't we'd minimze and get the smallest Sharpe Ratio
+We multiple by -1 to get the maximum. If we didn't we'd minimize and get the smallest Sharpe Ratio
 
 ** Ranges and constraints
 
@@ -715,7 +715,7 @@ We multiple by -1 to get the maximum. If we didn't we'd minimze and get the smal
   - This makes the process faster
   - Only focus on values in the range of 0 to 1. Prevent 200% allocations
 
-- Constraints: Porperties of X that must be "true"
+- Constraints: Properties of X that must be "true"
   - For example, the sum of abs(X) = 1.0
   - Our total allocation must add up to 100%
 
