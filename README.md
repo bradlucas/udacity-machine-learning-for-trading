@@ -9,5 +9,6 @@ Parts
 -----
 
 - [part1](part1/part1.org)
+  - [assignments](parts1/assignments.md)
 - [part2](part2/part2.org)
 - [part3](part3/part3.org)
