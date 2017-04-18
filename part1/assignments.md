@@ -1,0 +1,54 @@
+
+
+─ 01-01
+ - [get_max_close.py](01-01/get_max_close.py)
+ - [get_mean_volume.py](01-01/get_mean_volume.py)
+ - [plot_two_columns.py](01-01/plot_two_columns.py)
+ - [plotting_adj_close.py](01-01/plotting_adj_close.py)
+ - [plotting_high.py](01-01/plotting_high.py)
+ - [read_csv.py](01-01/read_csv.py)
+ - [select_rows_csv.py](01-01/select_rows_csv.py)
+- 01-02
+ - empty_data_frame.py
+ - join_spy_data.py
+ - join_spy_data_inner.py
+ - normalizing.py
+ - plotting.py
+ - quiz_plotting.py
+ - quiz_utility_functions_for_reading_data.py
+ - read_multiple_stocks.py
+ - slicing_data.py
+- 01-03
+ - arithmetic_operations.py
+ - array_attributes.py
+ - boolean_mask.py
+ - create_numpy_array.py
+ - data_type_numpy_array.py
+ - empty_numpy_array.py
+ - get_max_index.py
+ - indexing_with_arrays.py
+ - operations.py
+ - random_numbers.py
+ - time_operations.py
+ - timing_numpy.py
+- 01-04
+ - bollinger_bands.py
+ - daily_returns.py
+ - global_statistics.py
+ - rolling_statistics.py
+- 01-05
+ - fill_missing_values.py
+- 01-06
+ - histogram.py
+ - histogram_statistics.py
+ - histogram_two_plots.py
+ - scatterplots.py
+- 01-07
+ - portfolio_statistics.py
+ - sharpe_ratio.py
+- 01-08
+ - example.py
+ - fit_a_line.py
+ - minimizer.py
+ - polynomial.py
+
