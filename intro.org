@@ -15,3 +15,42 @@
   - http://www.cs.cmu.edu/~tom/mlbook-chapter-slides.html
   - http://personal.disco.unimib.it/Vanneschi/McGrawHill_-_Machine_Learning_-Tom_Mitchell.pdf
   
+* Links
+
+- http://quantsoftware.gatech.edu/Machine_Learning_for_Trading_Course
+
+
+* Interview with Tammer Kamel
+
+Tammer Kamel is the founder and CEO of Quandl - a data platform that makes financial and economic data available through easy-to-use APIs.
+- https://www.quandl.com/
+
+
+Listen to this two-part interview with him.
+
+Part 1: The Quandle Data Platform (08:18) - https://classroom.udacity.com/courses/ud501/lessons/4152218843/concepts/41433888110923
+Part 2: Trading Strategies and Nuances (10:53) - https://classroom.udacity.com/courses/ud501/lessons/4152218843/concepts/41433888120923
+
+Note: The interview is audio-only; closed captioning is available (CC button in the player).
+
+
+Notes:
+
+AWS
+NoSQL at it's core
+Ruby front end as client of main system
+
+
+Jump diffusion
+Model to try an capture the six sigma event
+
+Don't look in the same old places
+
+Look for new information sources
+
+Don't bet on black box, neural net sort of things. They fall down
+
+1. Theoretically sound
+2. Empirally test it
+3. Be scare of complexity
+
